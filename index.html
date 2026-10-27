@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QST-001 | Quantum Spacetime Research Laboratory</title>
+<meta name="description" content="Offline, exploratory classical scalar/FLRW and Base888 finite-Hilbert-space toy laboratory. Not a full quantum gravity derivation.">
+<style>
+:root { color-scheme:dark;--bg:#070e1b;--pane:#101b2e;--pane2:#14233a;--border:#2a3c55;--dim:#96a9c2;--ink:#eff5ff;--cyan:#6be4e7;--gold:#f8bf75;--rose:#ff849e;--lime:#a8eaa2;--blue:#9ba9ff; }
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 78% -16%,#182e4f 0,transparent 33%),radial-gradient(circle at 0% 0%,#12273d 0,transparent 34%),var(--bg);color:var(--ink);line-height:1.5}a{color:var(--cyan)}.wrap{max-width:1370px;margin:auto;padding:30px 24px 90px}
+header{display:flex;justify-content:space-between;align-items:center;gap:18px;border-bottom:1px solid var(--border);padding-bottom:23px}.mark{display:inline-flex;align-items:center;gap:10px;letter-spacing:.17em;font-size:11px;font-weight:800;color:var(--cyan);text-transform:uppercase}.dot{width:10px;height:10px;background:var(--cyan);border-radius:50%;box-shadow:0 0 17px #55dbe1}.pill{padding:6px 11px;border:1px solid #614b3e;border-radius:20px;background:#35271e;color:#ffdbb3;font-size:11px;font-weight:700}.hero{padding:32px 0 27px;max-width:1050px}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#98acc5;font-weight:750}.hero h1{font-size:clamp(31px,4.9vw,65px);letter-spacing:-.052em;line-height:1.09;margin:12px 0 13px;font-weight:780}.hero h1 em{font-style:normal;color:var(--cyan)}.hero p{color:#b7c6da;font-size:15px;max-width:870px;margin:0}.main{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px;align-items:start}.panel{border:1px solid var(--border);background:linear-gradient(150deg,#142039dd,#0e192be8);border-radius:14px;box-shadow:0 18px 40px #0002}.controls{padding:20px;position:sticky;top:15px}.sectionlabel{color:var(--dim);font-size:10px;font-weight:760;letter-spacing:.17em;text-transform:uppercase;border-bottom:1px solid #2b3b52;padding-bottom:8px;margin:5px 0 12px}.controls label{font-size:12px;display:flex;justify-content:space-between;gap:10px;color:#d8e3f1;margin:16px 0 7px}.value{font-family:ui-monospace,monospace;color:var(--cyan);font-size:12px}input[type=range]{width:100%;accent-color:#7cdde6;cursor:pointer}select{background:#1b2a3f;color:#f2f7ff;width:100%;padding:10px;border-radius:8px;border:1px solid #394c65;font:inherit;font-size:13px}button{background:#1e3850;border:1px solid #3b6476;color:#eef8ff;border-radius:8px;padding:10px 13px;font-weight:670;cursor:pointer}button:hover,button:focus-visible{background:#244961}.btns{display:flex;gap:8px;margin:16px 0}.btns button{flex:1}button.primary{background:#2c6d77;border-color:#56b5bb}.subnote{font-size:11px;color:var(--dim);line-height:1.55}.content{display:grid;gap:18px}.readouts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{padding:16px 17px;min-width:0}.metric strong{display:block;font-size:22px;font-variant-numeric:tabular-nums;letter-spacing:-.03em}.metric .label{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}.metric .detail{color:#aebed2;font-size:10px;margin-top:7px}.plot{padding:20px 21px 17px}.headrow{display:flex;align-items:flex-start;justify-content:space-between;gap:13px;margin-bottom:14px}.headrow h2{font-size:16px;letter-spacing:-.015em;margin:0}.headrow p{font-size:11px;color:var(--dim);margin:4px 0 0}.legend{display:flex;flex-wrap:wrap;gap:7px 15px;font-size:10px;color:#bdd0e4}.key{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px;border-radius:2px}canvas{width:100%;height:258px;display:block;background:#0b1728;border:1px solid #283b50;border-radius:10px}.short canvas{height:202px}.footer{border-top:1px solid var(--border);padding-top:24px;margin-top:29px;color:var(--dim);font-size:12px;display:flex;gap:15px;flex-wrap:wrap;justify-content:space-between}.warning{margin:18px 0 0;background:#2b231e;border:1px solid #574332;color:#f0cfac;padding:12px 15px;border-radius:10px;font-size:12px}.timebox{margin-top:13px;display:flex;justify-content:space-between;gap:12px;align-items:center}.timebox input{flex:1}.kbd{background:#142c37;padding:2px 6px;border-radius:4px}.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}.small{font-size:11px;color:var(--dim)}.score{display:inline-block;border-radius:5px;background:#1d3047;padding:3px 7px;color:#cbdcf2;font-size:10px}.equation{font-family:ui-monospace,monospace;font-size:11px;color:#c0cfea;white-space:normal;padding:11px 13px;background:#0c1727;border-radius:8px;overflow-wrap:anywhere}
+@media (max-width:1000px){.main{grid-template-columns:1fr}.controls{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px}.controls .sectionlabel,.controls .btns,.controls .subnote{grid-column:1/-1}}@media (max-width:720px){.wrap{padding:20px 12px 70px}.readouts{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr}.controls{display:block}.headrow{display:block}header{align-items:flex-start}header .pill{max-width:165px;text-align:center}}
+</style>
+</head>
+<body><div class="wrap">
+<header><div class="mark"><span class="dot"></span> MONOLITHIC / EFMW · EXPERIMENTAL MATHEMATICS</div><div class="pill">UNRESOLVED · PHYSICAL THEORY</div></header>
+<section class="hero"><div class="eyebrow">QST–001 / CANDIDATE LOW-ENERGY FOUNDATION / 2026</div><h1>Quantum spacetime<br><em>research laboratory.</em></h1><p>One rigorous distinction, visualized: an <b>assumed</b> Einstein–Standard Model–scalar action yields classical field and metric dynamics; an independently assumed EFMW pressure map and an 888-state quantum toy <b>do not yet derive</b> the universe.</p></section>
+<div class="main">
+<aside class="panel controls" aria-label="Simulation controls">
+  <div class="sectionlabel">01 / Model controls</div>
+  <div><label for="mode">Metric regime</label><select id="mode"><option value="flrw">Coupled classical FLRW</option><option value="minkowski">Flat test-field limit</option></select></div>
+  <div><label for="pressure">Threshold gate pressure law</label><select id="pressure"><option value="stress">Derived scalar stress pressure</option><option value="linear">Assumed linear EFMW map</option></select></div>
+  <div><label for="mass">Scalar mass m <span class="value" id="massv">1.00</span></label><input id="mass" type="range" min="0.30" max="2.6" step="0.05" value="1.00"></div>
+  <div><label for="amplitude">Starting scalar amplitude <span class="value" id="amplitudev">0.55</span></label><input id="amplitude" type="range" min="0.05" max="1.2" step="0.05" value="0.55"></div>
+  <div><label for="planck">Reduced M<sub>Pl</sub> (toy units) <span class="value" id="planckv">2.5</span></label><input id="planck" type="range" min="1.0" max="12.0" step="0.5" value="2.5"></div>
+  <div><label for="vacuum">Vacuum density Λ <span class="value" id="vacuumv">0.030</span></label><input id="vacuum" type="range" min="0" max="0.2" step="0.005" value="0.03"></div>
+  <div class="sectionlabel" style="margin-top:23px">02 / Optional cavitation gate</div>
+  <div><label for="threshold">Pressure threshold <span class="value" id="thresholdv">0.000</span></label><input id="threshold" type="range" min="-0.7" max="0.7" step="0.025" value="0.0"></div>
+  <div><label for="on">Formation rate Γ<sub>on</sub> <span class="value" id="onv">2.0</span></label><input id="on" type="range" min="0.0" max="8" step="0.2" value="2.0"></div>
+  <div><label for="off">Collapse rate Γ<sub>off</sub> <span class="value" id="offv">4.0</span></label><input id="off" type="range" min="0.0" max="8" step="0.2" value="4.0"></div>
+  <div class="btns"><button id="reset" type="button">Reset parameters</button><button id="export" class="primary" type="button">Export CSV</button></div>
+  <div class="subnote">No natural frequency, Stoney-time period, scalar mass, or physical cavitation rate has been measured by this laboratory. All axes use <b>dimensionless illustrative units</b>.</div>
+</aside>
+<main class="content">
+  <section class="readouts" aria-label="Current numerical values">
+    <div class="panel metric"><div class="label">Elapsed toy time</div><strong id="timeValue">0.00</strong><div class="detail">dimensionless</div></div>
+    <div class="panel metric"><div class="label">Scalar ϕ</div><strong id="phiValue">0.550</strong><div class="detail">classical field</div></div>
+    <div class="panel metric"><div class="label">Scale factor a</div><strong id="scaleValue">1.000</strong><div class="detail">FLRW only</div></div>
+    <div class="panel metric"><div class="label">Cavity occupancy n</div><strong id="occupancyValue">0.000</strong><div class="detail">optional assumption</div></div>
+  </section>
+  <section class="panel plot"><div class="headrow"><div><h2>Scalar motion &amp; pressure</h2><p>Canonical stress pressure oscillates at double the field frequency only in the undamped flat limit.</p></div><div class="legend"><span><i class="key" style="background:#6be4e7"></i>ϕ(t)</span><span><i class="key" style="background:#ff849e"></i>p<sub>stress</sub></span><span><i class="key" style="background:#f8bf75"></i>p<sub>linear</sub></span></div></div><canvas id="wave" aria-label="Time graph of scalar field and two pressure definitions" role="img"></canvas><div class="timebox"><button id="play" class="primary" type="button">▶ Play</button><input id="seek" aria-label="Time position" type="range" min="0" max="60" step="0.05" value="0"><span id="seekv" class="value">0 / 60</span></div></section>
+  <section class="split"><div class="panel plot short"><div class="headrow"><div><h2>Classical expansion</h2><p>FLRW scale factor; not quantized metric.</p></div></div><canvas id="scale" role="img" aria-label="Scale factor over time"></canvas></div><div class="panel plot short"><div class="headrow"><div><h2>Permission / occupancy</h2><p>Chosen pressure below threshold permits cavity proxy.</p></div><div class="legend"><span><i class="key" style="background:#a8eaa2"></i>n(t)</span></div></div><canvas id="cavity" role="img" aria-label="Cavitation occupancy and permission gate over time"></canvas></div></section>
+  <section class="panel plot short"><div class="headrow"><div><h2>Base888 · exactly unitary finite-level example</h2><p>A separately assumed 888-state cyclic hopping Hamiltonian. This is <b>not</b> emergent spacetime.</p></div><div class="score" id="norm">Hilbert norm = 1</div></div><canvas id="base888" role="img" aria-label="888-level return probability as a function of toy time"></canvas><div class="equation">H = J Σ (|j⟩⟨j+1| + h.c.) · E<sub>k</sub> = 2J cos(2πk/888) · P<sub>return</sub>(t) = |Σ exp(−iE<sub>k</sub>t)/888|²</div></section>
+  <div class="warning"><b>Physics boundary:</b> The Standard Model is present in the paper's symbolic action, not in these numerical plots. The gravitational backreaction is classical FLRW, not a graviton or quantum spacetime. The scalar's stress-energy pressure is not the same physical object as hydrodynamic pressure. Base888 dynamics are a finite graph illustration, not a proof of 3+1-dimensional geometry.</div>
+</main></div>
+<footer class="footer"><span>QST-001 / Monolithic LLC · research draft · 27 October 2026</span><span><a href="QST-001.md">Formal paper</a> · <a href="CLAIMS.md">Claims register</a> · <a href="https://github.com/enuminous/papers/blob/main/RHC-001-EFMW-Rahasya-Pressure-Cycle-Formalization.md">RHC-001</a></span></footer>
+</div>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const ids=['mass','amplitude','planck','vacuum','threshold','on','off'];
+const defaults={mass:1,amplitude:.55,planck:2.5,vacuum:.03,threshold:0,on:2,off:4};
+const DURATION=60, dt=0.025;let rows=[], playing=false, playPos=0, lastFrame=0;
+const getP=()=>({mode:$('mode').value,pressure:$('pressure').value,mass:+$('mass').value,A:+$('amplitude').value,M:+$('planck').value,lambda:+$('vacuum').value,threshold:+$('threshold').value,on:+$('on').value,off:+$('off').value});
+function dynamics(y,p){let [phi,pi,H,loga]=y;return [pi,-p.mass*p.mass*phi-(p.mode==='flrw'?3*H*pi:0),p.mode==='flrw'?-pi*pi/(2*p.M*p.M):0,p.mode==='flrw'?H:0];}
+function rk4(y,h,p){const add=(v,k,c)=>v.map((x,i)=>x+c*k[i]);let a=dynamics(y,p),b=dynamics(add(y,a,h/2),p),c=dynamics(add(y,b,h/2),p),d=dynamics(add(y,c,h),p);return y.map((v,i)=>v+h*(a[i]+2*b[i]+2*c[i]+d[i])/6);}
+function calculate(){const p=getP(),E0=.5*p.mass*p.mass*p.A*p.A;let H=p.mode==='flrw'?Math.sqrt((E0+p.lambda)/(3*p.M*p.M)):0;
+let y=[p.A,0,H,0],n=0,arr=[];
+for(let i=0;i<=Math.round(DURATION/dt);i++){
+ const t=i*dt,[phi,pi,hub,loga]=y,rho=.5*(pi*pi+p.mass*p.mass*phi*phi),stress=.5*(pi*pi-p.mass*p.mass*phi*phi),linear=.8*phi;
+ const gateP=p.pressure==='stress'?stress:linear,allow=gateP<p.threshold?1:0;
+ arr.push({t,phi,pi,rho,stress,linear,a:Math.exp(loga),H:hub,n,allow,gateP});
+ if(i<Math.round(DURATION/dt)){
+  y=rk4(y,dt,p);
+  n=allow?1-(1-n)*Math.exp(-p.on*dt):n*Math.exp(-p.off*dt);
+ }
+}
+rows=arr;
+updateLabels();render();plot888();
+}
+function updateLabels(){for(const id of ids){let v=+$(id).value;let digits=id==='vacuum'||id==='threshold'?3:id==='mass'||id==='amplitude'?2:1;$(id+'v').textContent=v.toFixed(digits);}}
+function prepare(canvas){let box=canvas.getBoundingClientRect(),dpr=Math.min(2,window.devicePixelRatio||1),w=Math.max(120,box.width),h=Math.max(120,box.height);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);const ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);return {ctx,w,h};}
+function line(ctx,coords,color,width=1.7){if(!coords.length)return;ctx.beginPath();coords.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.strokeStyle=color;ctx.lineWidth=width;ctx.stroke();}
+function plot(id,series,yMin,yMax,labels=true){let {ctx,w,h}=prepare($(id)),left=45,right=15,top=14,bottom=27,cw=w-left-right,ch=h-top-bottom;ctx.clearRect(0,0,w,h);ctx.font='10px ui-monospace,monospace';ctx.fillStyle='#98abc4';const span=Math.max(.0000001,yMax-yMin);
+for(let j=0;j<=4;j++){let v=yMin+(yMax-yMin)*j/4,yy=top+ch*(1-j/4);ctx.strokeStyle='#29405b';ctx.lineWidth=.7;ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(left+cw,yy);ctx.stroke();ctx.textAlign='right';ctx.fillText(Math.abs(v)<.0005?'0':v.toFixed(2),left-8,yy+3);}
+for(let j=0;j<=4;j++){const x=left+cw*j/4;ctx.fillStyle='#9fb2c8';ctx.textAlign='center';ctx.fillText((15*j).toString(),x,h-8);}
+const X=t=>left+cw*t/DURATION,Y=v=>top+ch*(1-(v-yMin)/span);
+for (const s of series){const points=rows.filter((_,i)=>i%2===0).map(r=>[X(r.t),Y(r[s.key])]);line(ctx,points,s.color,s.width||1.8);}
+ctx.beginPath();ctx.moveTo(X(playPos),top);ctx.lineTo(X(playPos),top+ch);ctx.strokeStyle='#ffffff99';ctx.lineWidth=1;ctx.setLineDash([3,4]);ctx.stroke();ctx.setLineDash([]);
+}
+function plot888(){let {ctx,w,h}=prepare($('base888')),left=45,right=15,top=13,bottom=26,cw=w-left-right,ch=h-top-bottom;ctx.clearRect(0,0,w,h);ctx.font='10px ui-monospace,monospace';ctx.textAlign='right';ctx.fillStyle='#95aac4';
+for(let j=0;j<=4;j++){let y=top+ch*(1-j/4);ctx.fillText((j/4).toFixed(2),left-7,y+3);ctx.strokeStyle='#29405b';ctx.beginPath();ctx.moveTo(left,y);ctx.lineTo(left+cw,y);ctx.stroke();}
+let points=[];for(let i=0;i<=310;i++){let t=i*DURATION/310,re=0,im=0;for(let k=0;k<888;k++){let th=-2*Math.cos(2*Math.PI*k/888)*t;re+=Math.cos(th);im+=Math.sin(th);}let prob=(re*re+im*im)/(888*888);points.push([left+cw*i/310,top+ch*(1-prob)]);}line(ctx,points,'#9ba9ff',1.8);
+for(let j=0;j<=4;j++){ctx.fillStyle='#95aac4';ctx.textAlign='center';ctx.fillText(''+15*j,left+cw*j/4,h-7);}
+}
+function render(){if(!rows.length)return;let i=Math.min(rows.length-1,Math.round(playPos/dt)),r=rows[i];$('timeValue').textContent=r.t.toFixed(2);$('phiValue').textContent=r.phi.toFixed(3);$('scaleValue').textContent=r.a.toFixed(3);$('occupancyValue').textContent=r.n.toFixed(3);$('seek').value=playPos;$('seekv').textContent=playPos.toFixed(1)+' / 60';let vals=rows.flatMap(x=>[x.phi,x.stress,x.linear]),mn=Math.min(...vals),mx=Math.max(...vals),pad=Math.max(.1,(mx-mn)*.12);plot('wave',[{key:'phi',color:'#6be4e7'},{key:'stress',color:'#ff849e'},{key:'linear',color:'#f8bf75'}],mn-pad,mx+pad);
+let ma=rows[rows.length-1].a;plot('scale',[{key:'a',color:'#a8eaa2'}],Math.min(0.95,1),ma+Math.max(.1,(ma-1)*.08));plot('cavity',[{key:'allow',color:'#f8bf75',width:1.0},{key:'n',color:'#a8eaa2'}],-.05,1.05);}
+function frame(timestamp){if(playing){if(lastFrame){playPos+=Math.min(.08,(timestamp-lastFrame)/1000)*3.5;if(playPos>=DURATION){playPos=0;}}renderReadoutsOnly();}lastFrame=timestamp;requestAnimationFrame(frame);}
+function renderReadoutsOnly(){if(!rows.length)return;let i=Math.min(rows.length-1,Math.round(playPos/dt)),r=rows[i];$('timeValue').textContent=r.t.toFixed(2);$('phiValue').textContent=r.phi.toFixed(3);$('scaleValue').textContent=r.a.toFixed(3);$('occupancyValue').textContent=r.n.toFixed(3);$('seek').value=playPos;$('seekv').textContent=playPos.toFixed(1)+' / 60';if(Math.floor(playPos*8)!==renderReadoutsOnly.prev){renderReadoutsOnly.prev=Math.floor(playPos*8);render();}}
+for(const id of [...ids,'mode','pressure'])$(id).addEventListener('input',()=>{playPos=0;calculate();});
+$('reset').addEventListener('click',()=>{for(const [id,v] of Object.entries(defaults))$(id).value=v;$('mode').value='flrw';$('pressure').value='stress';playPos=0;playing=false;$('play').textContent='▶ Play';calculate();});
+$('play').addEventListener('click',()=>{playing=!playing;$('play').textContent=playing?'Ⅱ Pause':'▶ Play';lastFrame=0;});
+$('seek').addEventListener('input',e=>{playPos=Number(e.target.value);render();});
+$('export').addEventListener('click',()=>{const keys=['t','phi','pi','rho','stress','linear','a','H','n','allow'];const header='# QST-001 DIMENSIONLESS CLASSICAL TOY DATA — NOT QUANTUM GRAVITY\n# '+JSON.stringify(getP())+'\n';const csv=header+keys.join(',')+'\n'+rows.map(r=>keys.map(k=>r[k]).join(',')).join('\n')+'\n';const blob=new Blob([csv],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='qst001-toy-data.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+window.addEventListener('resize',()=>{render();plot888();});calculate();requestAnimationFrame(frame);
+</script>
+</body></html>

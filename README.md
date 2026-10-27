@@ -1,5 +1,31 @@
 # QST-001 · Standard Model + Einstein Gravity + EFMW Pressure-Cycle Research Laboratory
 
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
+
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
+
+**This project:** [Repository home](https://github.com/enuminous/Quantum-Gravity) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#fundamental-physics-cosmology-and-quantum-geometry)
+
+<details open>
+<summary><strong>On this page</strong></summary>
+
+- [Start here](#start-here)
+- [Files — all at repository root](#files--all-at-repository-root)
+- [Reproduce](#reproduce)
+- [Physical content / provenance](#physical-content--provenance)
+  - [Links](#links)
+- [Publication](#publication)
+
+
+</details>
+
+**Related repositories:** [QST](https://github.com/enuminous/QST) · [Base888-Quantum-Geometry](https://github.com/enuminous/Base888-Quantum-Geometry) · [Standard-Model-Reduction](https://github.com/enuminous/Standard-Model-Reduction) · [EFMW-Physics-Lab](https://github.com/enuminous/EFMW-Physics-Lab) · [papers](https://github.com/enuminous/papers) · [Cosmology](https://github.com/enuminous/Cosmology) · [EFMW](https://github.com/enuminous/EFMW)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
+
 **Flat-stacked GitHub ZIP — release candidate v0.1 — 2026-10-27**
 
 > **Boundary:** This is a classical, low-energy benchmark plus a *separate* 888-state unitary toy. It is **not** a derived complete quantum theory of spacetime, not a quantum gravity simulation, and not a complete Standard Model implementation.

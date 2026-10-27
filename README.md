@@ -16,6 +16,7 @@
 - [Physical content / provenance](#physical-content--provenance)
   - [Links](#links)
 - [Publication](#publication)
+- [Connected physics research units](#connected-physics-research-units)
 
 
 </details>
@@ -82,3 +83,15 @@ The JSON/CSV outputs are generated next to the scripts by default and are not fr
 This ZIP is GitHub-ready and *flat-stacked*: upload its contents directly to the root of a GitHub repository, preserving filenames. **Creation of this ZIP does not itself push changes to a remote repository.** A public repository release and scientific peer review are separate actions.
 
 **Licensing:** No license has been chosen for the new package. This does not alter license or attribution requirements of linked external sources. The user/rights holder should select licensing terms before accepting outside contributions.
+
+<!-- ENUMINOUS-RESEARCH-CHAIN:START -->
+## Connected physics research units
+
+**Established-theory reconstructions and baseline laboratories:** [Standard-Model-Reduction](https://github.com/enuminous/Standard-Model-Reduction) · [Higgs-Gauge-Lab](https://github.com/enuminous/Higgs-Gauge-Lab) · [EFMW-Physics-Lab](https://github.com/enuminous/EFMW-Physics-Lab)
+
+**Proposed quantum-geometry bridge:** [Base888-Quantum-Geometry](https://github.com/enuminous/Base888-Quantum-Geometry) · [QST-001](https://github.com/enuminous/Quantum-Gravity/blob/main/QST-001.md) · [QST-002](https://github.com/enuminous/QST/blob/main/QST-002.md)
+
+**EFMW definitions, pressure-cycle model, and spacetime investigations:** [Canonical 102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean review](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [RHC-001: Rahasya pressure-cycle formalization](https://github.com/enuminous/papers/blob/main/RHC-001-EFMW-Rahasya-Pressure-Cycle-Formalization.md) · [EFMW-Lagrangian](https://github.com/enuminous/EFMW-Lagrangian) · [Cosmology](https://github.com/enuminous/Cosmology)
+
+> **Interpretation:** Cross-links represent research dependencies and comparisons. The Standard Model and continuum gravity are inputs in current QST calculations; their emergence from Base888 and the physical status of the pressure cycle remain **UNRESOLVED**.
+<!-- ENUMINOUS-RESEARCH-CHAIN:END -->

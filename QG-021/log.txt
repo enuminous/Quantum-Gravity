@@ -1,0 +1,14 @@
+case (47, 3.0, 0.0, 'double', 'full', True) entropy 8.881784197001252e-16 neg 1.0265122085684197e-12 early sep 3.0000000000000577 accel err 0.0
+case (47, 3.0, 2.0, 'double', 'full', True) entropy 0.00869027762101282 neg 0.1107590834114851 early sep 2.999494549710062 accel err 0.012655751311856102
+case (47, 3.0, 8.0, 'double', 'full', True) entropy 0.13340451243821894 neg 0.5356933826298111 early sep 2.9979777018911373 accel err 0.012655751311877395
+case (47, 4.0, 0.0, 'double', 'full', True) entropy 8.881784197001252e-16 neg 1.0265122085684197e-12 early sep 4.000000000000077 accel err 0.0
+case (47, 4.0, 2.0, 'double', 'full', True) entropy 0.0011945179175898435 neg 0.0385364837919272 early sep 3.9997336887116317 accel err 0.012669286759891261
+case (47, 4.0, 8.0, 'double', 'full', True) entropy 0.01732845630133084 neg 0.161278997743309 early sep 3.9989346701538655 accel err 0.01266928675998466
+case (47, 6.0, 0.0, 'double', 'full', True) entropy 8.881784197001252e-16 neg 1.0265122085684197e-12 early sep 6.0000000000001155 accel err 0.0
+case (47, 6.0, 2.0, 'double', 'full', True) entropy 8.87654594613485e-05 neg 0.010126715795461316 early sep 5.999886660433544 accel err 0.012674966446046033
+case (47, 6.0, 8.0, 'double', 'full', True) entropy 0.001384859452265741 neg 0.04077183781280902 early sep 5.9995466327582925 accel err 0.012674966446085923
+case (23, 3.0, 8.0, 'double', 'full', True) entropy 0.1360812020280887 neg 0.534819012969163 early sep 2.9980535761706832 accel err 0.04950763561152099
+case (95, 3.0, 8.0, 'double', 'full', True) entropy 0.1323868635836456 neg 0.5351018876123188 early sep 2.9979581926537318 accel err 0.0031821695043441544
+case (47, 3.0, 8.0, 'single', 'full', True) entropy 0.2770535075007211 neg 0.6933753878597213 early sep 2.9982075847258343 accel err 0.00887772961631136
+case (47, 3.0, 8.0, 'double', 'additive', True) entropy 8.881784197001252e-16 neg 1.0416112417033219e-12 early sep 2.998245215146888 accel err 0.012677838115925223
+checks {'unitary_norm': True, 'unitary_energy': True, 'mean_norm': True, 'mean_energy': True, 'mean_product': True, 'null_entanglement': True, 'disjoint_entanglement': True, 'attraction': True, 'opposite_acceleration': True, 'short_time_coefficient': True, 'spatial_refinement': True, 'force_correspondence_fine': True} refinement {'coarse_to_medium': 0.002676689589869774, 'medium_to_fine': 0.0010176488545733386, 'ratio': 2.630268365989571}

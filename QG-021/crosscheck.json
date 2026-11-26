@@ -1,0 +1,9 @@
+{
+  "n": 15,
+  "dimension": 225,
+  "samples": 81,
+  "separation_error": 4.760636329592671e-13,
+  "entropy_error": 4.25659507641285e-13,
+  "eigen_residual": 4.263256414560601e-14,
+  "pass": true
+}

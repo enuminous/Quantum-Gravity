@@ -1,0 +1,825 @@
+{
+  "scope": "Free linearized gravity; continuum periodic box with spherical Fourier regulator; no nonlinear constraints or dynamical matter.",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "parameters": {
+    "box_length": 16.0,
+    "support_radius": 1.0,
+    "smearing": "four-fold convolution of normalized balls radius A/4",
+    "alpha": 0.5,
+    "beta": 0.5,
+    "times": [
+      0.0,
+      0.025,
+      0.05,
+      0.07500000000000001,
+      0.1,
+      0.125,
+      0.15000000000000002,
+      0.17500000000000002,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.30000000000000004,
+      0.325,
+      0.35000000000000003,
+      0.375,
+      0.4,
+      0.42500000000000004,
+      0.45,
+      0.47500000000000003,
+      0.5,
+      0.525,
+      0.55,
+      0.5750000000000001,
+      0.6000000000000001,
+      0.625,
+      0.65,
+      0.675,
+      0.7000000000000001,
+      0.7250000000000001,
+      0.75,
+      0.775,
+      0.8,
+      0.8250000000000001,
+      0.8500000000000001,
+      0.875,
+      0.9,
+      0.925,
+      0.9500000000000001,
+      0.9750000000000001,
+      1.0,
+      1.0250000000000001,
+      1.05,
+      1.075,
+      1.1,
+      1.125,
+      1.1500000000000001,
+      1.175,
+      1.2000000000000002,
+      1.225,
+      1.25,
+      1.2750000000000001,
+      1.3,
+      1.3250000000000002,
+      1.35,
+      1.375,
+      1.4000000000000001,
+      1.425,
+      1.4500000000000002,
+      1.475,
+      1.5,
+      1.5250000000000001,
+      1.55,
+      1.5750000000000002,
+      1.6,
+      1.625,
+      1.6500000000000001,
+      1.675,
+      1.7000000000000002,
+      1.725,
+      1.75,
+      1.7750000000000001,
+      1.8,
+      1.8250000000000002,
+      1.85,
+      1.875,
+      1.9000000000000001,
+      1.925,
+      1.9500000000000002,
+      1.975,
+      2.0,
+      2.025,
+      2.0500000000000003,
+      2.075,
+      2.1,
+      2.125,
+      2.15,
+      2.1750000000000003,
+      2.2,
+      2.225,
+      2.25,
+      2.275,
+      2.3000000000000003,
+      2.325,
+      2.35,
+      2.375,
+      2.4000000000000004,
+      2.4250000000000003,
+      2.45,
+      2.475,
+      2.5,
+      2.5250000000000004,
+      2.5500000000000003,
+      2.575,
+      2.6,
+      2.625,
+      2.6500000000000004,
+      2.6750000000000003,
+      2.7,
+      2.725,
+      2.75,
+      2.7750000000000004,
+      2.8000000000000003,
+      2.825,
+      2.85,
+      2.875,
+      2.9000000000000004,
+      2.9250000000000003,
+      2.95,
+      2.975,
+      3.0,
+      3.0250000000000004,
+      3.0500000000000003,
+      3.075,
+      3.1,
+      3.125,
+      3.1500000000000004,
+      3.1750000000000003,
+      3.2,
+      3.225,
+      3.25,
+      3.2750000000000004,
+      3.3000000000000003,
+      3.325,
+      3.35,
+      3.375,
+      3.4000000000000004,
+      3.4250000000000003,
+      3.45,
+      3.475,
+      3.5,
+      3.5250000000000004,
+      3.5500000000000003,
+      3.575,
+      3.6,
+      3.625,
+      3.6500000000000004,
+      3.6750000000000003,
+      3.7,
+      3.725,
+      3.75,
+      3.7750000000000004,
+      3.8000000000000003,
+      3.825,
+      3.85,
+      3.875,
+      3.9000000000000004,
+      3.9250000000000003,
+      3.95,
+      3.975,
+      4.0,
+      4.025,
+      4.05,
+      4.075,
+      4.1000000000000005,
+      4.125,
+      4.15,
+      4.175,
+      4.2,
+      4.2250000000000005,
+      4.25,
+      4.275,
+      4.3,
+      4.325,
+      4.3500000000000005,
+      4.375,
+      4.4,
+      4.425,
+      4.45,
+      4.4750000000000005,
+      4.5,
+      4.525,
+      4.55,
+      4.575,
+      4.6000000000000005,
+      4.625,
+      4.65,
+      4.675,
+      4.7,
+      4.7250000000000005,
+      4.75,
+      4.775,
+      4.800000000000001,
+      4.825,
+      4.8500000000000005,
+      4.875,
+      4.9,
+      4.925000000000001,
+      4.95,
+      4.9750000000000005,
+      5.0,
+      5.025,
+      5.050000000000001,
+      5.075,
+      5.1000000000000005,
+      5.125,
+      5.15,
+      5.175000000000001,
+      5.2,
+      5.2250000000000005,
+      5.25,
+      5.275,
+      5.300000000000001,
+      5.325,
+      5.3500000000000005,
+      5.375,
+      5.4,
+      5.425000000000001,
+      5.45,
+      5.4750000000000005,
+      5.5,
+      5.525,
+      5.550000000000001,
+      5.575,
+      5.6000000000000005,
+      5.625,
+      5.65,
+      5.675000000000001,
+      5.7,
+      5.7250000000000005,
+      5.75,
+      5.775,
+      5.800000000000001,
+      5.825,
+      5.8500000000000005,
+      5.875,
+      5.9,
+      5.925000000000001,
+      5.95,
+      5.9750000000000005,
+      6.0,
+      6.025,
+      6.050000000000001,
+      6.075,
+      6.1000000000000005,
+      6.125,
+      6.15,
+      6.175000000000001,
+      6.2,
+      6.2250000000000005,
+      6.25,
+      6.275,
+      6.300000000000001,
+      6.325,
+      6.3500000000000005,
+      6.375,
+      6.4,
+      6.425000000000001,
+      6.45,
+      6.4750000000000005,
+      6.5,
+      6.525,
+      6.550000000000001,
+      6.575,
+      6.6000000000000005,
+      6.625,
+      6.65,
+      6.675000000000001,
+      6.7,
+      6.7250000000000005,
+      6.75,
+      6.775,
+      6.800000000000001,
+      6.825,
+      6.8500000000000005,
+      6.875,
+      6.9,
+      6.925000000000001,
+      6.95,
+      6.9750000000000005,
+      7.0
+    ]
+  },
+  "projector": {
+    "count": 128,
+    "ranks": [
+      2
+    ],
+    "max_idempotence": 1.249000902703301e-16,
+    "max_transverse": 3.0531133177191805e-16,
+    "max_trace": 1.734723475976807e-16,
+    "max_polynomial": 1.4210854715202004e-14
+  },
+  "independent_infinite_volume": {
+    "variance": 10.852706455246206,
+    "rows": [
+      {
+        "distance": 2.5,
+        "samples": [
+          {
+            "time": 0.0,
+            "commutator": 0.0,
+            "covariance": 9.008149930678774e-05
+          },
+          {
+            "time": 0.25,
+            "commutator": 3.1323085684882594e-17,
+            "covariance": 0.00010149210784291851
+          },
+          {
+            "time": 0.5,
+            "commutator": 4.582291628217801e-17,
+            "covariance": 0.00014505685130317855
+          },
+          {
+            "time": 1.0,
+            "commutator": 0.00010808305540015193,
+            "covariance": 0.0007280712314439497
+          },
+          {
+            "time": 2.0,
+            "commutator": -0.07478878234589437,
+            "covariance": -0.00519933657219996
+          },
+          {
+            "time": 3.0,
+            "commutator": -0.06829972788106334,
+            "covariance": -0.004254498150550346
+          },
+          {
+            "time": 4.0,
+            "commutator": 0.00010004723656158139,
+            "covariance": -0.000463738039897008
+          },
+          {
+            "time": 5.0,
+            "commutator": -5.795424756424494e-18,
+            "covariance": -1.3864453797156036e-05
+          },
+          {
+            "time": 6.0,
+            "commutator": 1.698444787282369e-17,
+            "covariance": -2.0604409056909183e-06
+          }
+        ]
+      },
+      {
+        "distance": 3.0,
+        "samples": [
+          {
+            "time": 0.0,
+            "commutator": 0.0,
+            "covariance": 2.8560117124353603e-05
+          },
+          {
+            "time": 0.25,
+            "commutator": -4.837584846864947e-17,
+            "covariance": 3.0786636017431124e-05
+          },
+          {
+            "time": 0.5,
+            "commutator": -4.7332046756088985e-17,
+            "covariance": 3.849310519268681e-05
+          },
+          {
+            "time": 1.0,
+            "commutator": 4.184704871217232e-17,
+            "covariance": 9.417889273730952e-05
+          },
+          {
+            "time": 2.0,
+            "commutator": 0.014126896227415064,
+            "covariance": -0.001358650575519976
+          },
+          {
+            "time": 3.0,
+            "commutator": 0.09660677521174049,
+            "covariance": 0.0056565434297588865
+          },
+          {
+            "time": 4.0,
+            "commutator": 0.0113999103602212,
+            "covariance": 0.0021024633774384387
+          },
+          {
+            "time": 5.0,
+            "commutator": 3.298046525270579e-17,
+            "covariance": -4.635690106429769e-05
+          },
+          {
+            "time": 6.0,
+            "commutator": -6.2930900504696455e-18,
+            "covariance": -4.219696004986169e-06
+          }
+        ]
+      },
+      {
+        "distance": 4.0,
+        "samples": [
+          {
+            "time": 0.0,
+            "commutator": 0.0,
+            "covariance": 4.835217940862264e-06
+          },
+          {
+            "time": 0.25,
+            "commutator": 2.2113131038463405e-17,
+            "covariance": 5.026307379335835e-06
+          },
+          {
+            "time": 0.5,
+            "commutator": 2.6763896598203136e-17,
+            "covariance": 5.641845742195556e-06
+          },
+          {
+            "time": 1.0,
+            "commutator": -1.811897259036752e-17,
+            "covariance": 8.888895683559644e-06
+          },
+          {
+            "time": 2.0,
+            "commutator": 3.110445827654214e-17,
+            "covariance": 5.8292179556629246e-05
+          },
+          {
+            "time": 3.0,
+            "commutator": 0.010293320372746079,
+            "covariance": -0.0011386859989101186
+          },
+          {
+            "time": 4.0,
+            "commutator": 0.07308956513687598,
+            "covariance": 0.003219523365693419
+          },
+          {
+            "time": 5.0,
+            "commutator": 0.008763308686755332,
+            "covariance": 0.0015425944654478363
+          },
+          {
+            "time": 6.0,
+            "commutator": 2.8239196590457163e-17,
+            "covariance": -3.6298614104297766e-05
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "max_spacelike_commutator": 3.594044145240604e-10,
+    "max_spacelike_signal": 7.929332064817831e-11,
+    "max_postpulse_commutator": 1.1380537604322463e-10,
+    "min_direct_signal": 0.01612443163633794,
+    "min_equal_time_covariance_abs": 4.845098092011989e-06,
+    "min_nonlocal_control_signal": 0.0021489273540781927,
+    "coarse_spacelike_commutator": 0.053494687399229454,
+    "max_independent_integral_difference": 1.7737228075187517e-09,
+    "max_independent_spacelike": 4.837584846864947e-17
+  },
+  "checks": {
+    "TT_rank_two": true,
+    "TT_projector": true,
+    "local_polynomial": true,
+    "spacelike_commutator": true,
+    "spacelike_signal": true,
+    "cutoff_refinement": true,
+    "causal_positive_control": true,
+    "nonzero_spacelike_covariance": true,
+    "nonlocal_TT_control": true,
+    "postpulse_Huygens": true,
+    "independent_integral_spacelike": true,
+    "independent_integral_agreement": true
+  },
+  "sweep": [
+    {
+      "cutoff": 16,
+      "wavevectors": 17076,
+      "vacuum_variance": [
+        4.098740147530121,
+        0.05715672746465986
+      ],
+      "rows": [
+        {
+          "distance": 2.5,
+          "first_possible_arrival": 0.5,
+          "last_direct_arrival": 4.5,
+          "curvature": {
+            "max_spacelike_commutator": 0.053494687399229454,
+            "max_spacelike_signal": 0.01180187217212797,
+            "max_direct_signal": 0.03287442568622694,
+            "max_postpulse_commutator": 0.018140649966436075,
+            "equal_time_covariance": 0.02665691285292912
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.006140274180261127,
+            "max_spacelike_signal": 0.0013546927042340235,
+            "max_direct_signal": 0.055073304672390806,
+            "max_postpulse_commutator": 0.006801537223424253,
+            "equal_time_covariance": 0.0016016984365386498
+          }
+        },
+        {
+          "distance": 3.0,
+          "first_possible_arrival": 1.0,
+          "last_direct_arrival": 5.0,
+          "curvature": {
+            "max_spacelike_commutator": 0.04424661795279105,
+            "max_spacelike_signal": 0.009761676747000422,
+            "max_direct_signal": 0.027982632631540327,
+            "max_postpulse_commutator": 0.01077514380682587,
+            "equal_time_covariance": -0.020643827221010717
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.012411524256744242,
+            "max_spacelike_signal": 0.0027382785342622874,
+            "max_direct_signal": 0.04758961280021436,
+            "max_postpulse_commutator": 0.007145745270876909,
+            "equal_time_covariance": -0.0067634296533660805
+          }
+        },
+        {
+          "distance": 4.0,
+          "first_possible_arrival": 2.0,
+          "last_direct_arrival": 6.0,
+          "curvature": {
+            "max_spacelike_commutator": 0.029784620099906574,
+            "max_spacelike_signal": 0.0065711480221840885,
+            "max_direct_signal": 0.021300556029196147,
+            "max_postpulse_commutator": 0.008446281876477094,
+            "equal_time_covariance": -0.012224478265762588
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.015588827577468906,
+            "max_spacelike_signal": 0.0034392643069435878,
+            "max_direct_signal": 0.037275144792442254,
+            "max_postpulse_commutator": 0.008432823511777127,
+            "equal_time_covariance": -0.005479929683059955
+          }
+        }
+      ]
+    },
+    {
+      "cutoff": 32,
+      "wavevectors": 137064,
+      "vacuum_variance": [
+        10.830136496476582,
+        0.06496200867644192
+      ],
+      "rows": [
+        {
+          "distance": 2.5,
+          "first_possible_arrival": 0.5,
+          "last_direct_arrival": 4.5,
+          "curvature": {
+            "max_spacelike_commutator": 0.00013408342696067987,
+            "max_spacelike_signal": 2.9582052239641987e-05,
+            "max_direct_signal": 0.02553343574983985,
+            "max_postpulse_commutator": 5.211321429993896e-05,
+            "equal_time_covariance": 2.3184977778761837e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.009737817954740675,
+            "max_spacelike_signal": 0.0021483964236432072,
+            "max_direct_signal": 0.0511424933356322,
+            "max_postpulse_commutator": 0.005424604729204481,
+            "equal_time_covariance": -0.0026034127352983555
+          }
+        },
+        {
+          "distance": 3.0,
+          "first_possible_arrival": 1.0,
+          "last_direct_arrival": 5.0,
+          "curvature": {
+            "max_spacelike_commutator": 0.00010538615708111496,
+            "max_spacelike_signal": 2.3250739297154514e-05,
+            "max_direct_signal": 0.021394105919674264,
+            "max_postpulse_commutator": 4.343084621733203e-05,
+            "equal_time_covariance": -2.3138818751909218e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.014411894469229055,
+            "max_spacelike_signal": 0.003179606178057308,
+            "max_direct_signal": 0.04417009632797893,
+            "max_postpulse_commutator": 0.0057788608384230795,
+            "equal_time_covariance": -0.0027132396040008525
+          }
+        },
+        {
+          "distance": 4.0,
+          "first_possible_arrival": 2.0,
+          "last_direct_arrival": 6.0,
+          "curvature": {
+            "max_spacelike_commutator": 0.00010641223676680406,
+            "max_spacelike_signal": 2.347711733318158e-05,
+            "max_direct_signal": 0.01614223439144512,
+            "max_postpulse_commutator": 3.826780929480844e-05,
+            "equal_time_covariance": -4.540539753129132e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.016529707901734195,
+            "max_spacelike_signal": 0.003646843626460432,
+            "max_direct_signal": 0.034507043433759876,
+            "max_postpulse_commutator": 0.006717010662595086,
+            "equal_time_covariance": -0.002877868771125072
+          }
+        }
+      ]
+    },
+    {
+      "cutoff": 48,
+      "wavevectors": 462780,
+      "vacuum_variance": [
+        10.85258242038957,
+        0.06496511804397394
+      ],
+      "rows": [
+        {
+          "distance": 2.5,
+          "first_possible_arrival": 0.5,
+          "last_direct_arrival": 4.5,
+          "curvature": {
+            "max_spacelike_commutator": 2.10620675213639e-09,
+            "max_spacelike_signal": 4.646802337407812e-10,
+            "max_direct_signal": 0.025506792409089693,
+            "max_postpulse_commutator": 2.2283745780062478e-09,
+            "equal_time_covariance": 9.009028877319534e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.009740224688338298,
+            "max_spacelike_signal": 0.002148927405805676,
+            "max_direct_signal": 0.051140653758387805,
+            "max_postpulse_commutator": 0.005423871004482847,
+            "equal_time_covariance": -0.0026016856224829387
+          }
+        },
+        {
+          "distance": 3.0,
+          "first_possible_arrival": 1.0,
+          "last_direct_arrival": 5.0,
+          "curvature": {
+            "max_spacelike_commutator": 1.8916313987008943e-09,
+            "max_spacelike_signal": 4.1733971254632624e-10,
+            "max_direct_signal": 0.021371666517175803,
+            "max_postpulse_commutator": 1.8601807564902629e-09,
+            "equal_time_covariance": 2.8568556879267226e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.014413357615995798,
+            "max_spacelike_signal": 0.0031799289815842794,
+            "max_direct_signal": 0.044168482676136274,
+            "max_postpulse_commutator": 0.005778149584271211,
+            "equal_time_covariance": -0.002711840314548573
+          }
+        },
+        {
+          "distance": 4.0,
+          "first_possible_arrival": 2.0,
+          "last_direct_arrival": 6.0,
+          "curvature": {
+            "max_spacelike_commutator": 1.417429845361394e-09,
+            "max_spacelike_signal": 3.1271936204059804e-10,
+            "max_direct_signal": 0.01612456558406431,
+            "max_postpulse_commutator": 1.397630432507783e-09,
+            "equal_time_covariance": 4.845250481610727e-06
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.01653151833565584,
+            "max_spacelike_signal": 0.0036472430486316236,
+            "max_direct_signal": 0.03450589398234805,
+            "max_postpulse_commutator": 0.00671605201845636,
+            "equal_time_covariance": -0.0028764335276280162
+          }
+        }
+      ]
+    },
+    {
+      "cutoff": 64,
+      "wavevectors": 1097916,
+      "vacuum_variance": [
+        10.852688742105027,
+        0.06496511953308036
+      ],
+      "rows": [
+        {
+          "distance": 2.5,
+          "first_possible_arrival": 0.5,
+          "last_direct_arrival": 4.5,
+          "curvature": {
+            "max_spacelike_commutator": 4.201012659884408e-08,
+            "max_spacelike_signal": 9.268451650166655e-09,
+            "max_direct_signal": 0.025506600667486626,
+            "max_postpulse_commutator": 1.6084980191846873e-08,
+            "equal_time_covariance": 9.006788903387839e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.00974022442932234,
+            "max_spacelike_signal": 0.00214892734866065,
+            "max_direct_signal": 0.05114065265545271,
+            "max_postpulse_commutator": 0.0054238708870490765,
+            "equal_time_covariance": -0.002601685599117773
+          }
+        },
+        {
+          "distance": 3.0,
+          "first_possible_arrival": 1.0,
+          "last_direct_arrival": 5.0,
+          "curvature": {
+            "max_spacelike_commutator": 3.1823114658502375e-08,
+            "max_spacelike_signal": 7.020950029180695e-09,
+            "max_direct_signal": 0.021371505738661947,
+            "max_postpulse_commutator": 1.2497891205512342e-08,
+            "equal_time_covariance": 2.85530676193646e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.014413357255998729,
+            "max_spacelike_signal": 0.0031799289021607205,
+            "max_direct_signal": 0.04416848172111934,
+            "max_postpulse_commutator": 0.005778149453979616,
+            "equal_time_covariance": -0.0027118402767943137
+          }
+        },
+        {
+          "distance": 4.0,
+          "first_possible_arrival": 2.0,
+          "last_direct_arrival": 6.0,
+          "curvature": {
+            "max_spacelike_commutator": 3.4211744078255726e-08,
+            "max_spacelike_signal": 7.547939545269388e-09,
+            "max_direct_signal": 0.016124451248531187,
+            "max_postpulse_commutator": 9.89242203466922e-09,
+            "equal_time_covariance": 4.829702400877211e-06
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.016531517950575135,
+            "max_spacelike_signal": 0.003647242963674217,
+            "max_direct_signal": 0.03450589322913587,
+            "max_postpulse_commutator": 0.006716051872693801,
+            "equal_time_covariance": -0.002876433487375595
+          }
+        }
+      ]
+    },
+    {
+      "cutoff": 96,
+      "wavevectors": 3705092,
+      "vacuum_variance": [
+        10.852706255151586,
+        0.06496511968602826
+      ],
+      "rows": [
+        {
+          "distance": 2.5,
+          "first_possible_arrival": 0.5,
+          "last_direct_arrival": 4.5,
+          "curvature": {
+            "max_spacelike_commutator": 3.594044145240604e-10,
+            "max_spacelike_signal": 7.929332064817831e-11,
+            "max_direct_signal": 0.025506569341985093,
+            "max_postpulse_commutator": 1.119370862324392e-10,
+            "equal_time_covariance": 9.008893005164033e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.009740224453877932,
+            "max_spacelike_signal": 0.0021489273540781927,
+            "max_direct_signal": 0.0511406525442289,
+            "max_postpulse_commutator": 0.005423870867383483,
+            "equal_time_covariance": -0.002601685559000212
+          }
+        },
+        {
+          "distance": 3.0,
+          "first_possible_arrival": 1.0,
+          "last_direct_arrival": 5.0,
+          "curvature": {
+            "max_spacelike_commutator": 2.541590930143269e-10,
+            "max_spacelike_signal": 5.607365308721339e-11,
+            "max_direct_signal": 0.02137147911061086,
+            "max_postpulse_commutator": 1.1380537604322463e-10,
+            "equal_time_covariance": 2.8568122485283158e-05
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.0144133572609847,
+            "max_spacelike_signal": 0.003179928903260739,
+            "max_direct_signal": 0.04416848162412292,
+            "max_postpulse_commutator": 0.005778149438251174,
+            "equal_time_covariance": -0.0027118402457503464
+          }
+        },
+        {
+          "distance": 4.0,
+          "first_possible_arrival": 2.0,
+          "last_direct_arrival": 6.0,
+          "curvature": {
+            "max_spacelike_commutator": 2.3473173372861466e-10,
+            "max_spacelike_signal": 5.1787506988453604e-11,
+            "max_direct_signal": 0.01612443163633794,
+            "max_postpulse_commutator": 4.320447276847037e-11,
+            "equal_time_covariance": 4.845098092011989e-06
+          },
+          "bare_TT": {
+            "max_spacelike_commutator": 0.016531517922210713,
+            "max_spacelike_signal": 0.003647242957416392,
+            "max_direct_signal": 0.03450589315751583,
+            "max_postpulse_commutator": 0.006716051848935077,
+            "equal_time_covariance": -0.0028764334549357556
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "max_spacelike_commutator": 3.594044145240604e-10,
+    "max_spacelike_signal": 7.929332064817831e-11,
+    "max_postpulse_commutator": 1.1380537604322463e-10,
+    "min_direct_signal": 0.01612443163633794,
+    "min_equal_time_covariance_abs": 4.845098092011989e-06,
+    "min_nonlocal_control_signal": 0.0021489273540781927,
+    "coarse_spacelike_commutator": 0.053494687399229454,
+    "max_independent_integral_difference": 1.7737228075187517e-09,
+    "max_independent_spacelike": 4.837584846864947e-17
+  },
+  "checks": {
+    "TT_rank_two": true,
+    "TT_projector": true,
+    "local_polynomial": true,
+    "spacelike_commutator": true,
+    "spacelike_signal": true,
+    "cutoff_refinement": true,
+    "causal_positive_control": true,
+    "nonzero_spacelike_covariance": true,
+    "nonlocal_TT_control": true,
+    "postpulse_Huygens": true,
+    "independent_integral_spacelike": true,
+    "independent_integral_agreement": true
+  },
+  "refinement": [
+    {
+      "cutoff": 16,
+      "wavevectors": 17076,
+      "max_spacelike": 0.053494687399229454
+    },
+    {
+      "cutoff": 32,
+      "wavevectors": 137064,
+      "max_spacelike": 0.00013408342696067987
+    },
+    {
+      "cutoff": 48,
+      "wavevectors": 462780,
+      "max_spacelike": 2.10620675213639e-09
+    },
+    {
+      "cutoff": 64,
+      "wavevectors": 1097916,
+      "max_spacelike": 4.201012659884408e-08
+    },
+    {
+      "cutoff": 96,
+      "wavevectors": 3705092,
+      "max_spacelike": 3.594044145240604e-10
+    }
+  ],
+  "finest": [
+    {
+      "distance": 2.5,
+      "curvature": {
+        "max_spacelike_commutator": 3.594044145240604e-10,
+        "max_spacelike_signal": 7.929332064817831e-11,
+        "max_direct_signal": 0.025506569341985093,
+        "max_postpulse_commutator": 1.119370862324392e-10,
+        "equal_time_covariance": 9.008893005164033e-05
+      },
+      "bare_TT": {
+        "max_spacelike_commutator": 0.009740224453877932,
+        "max_spacelike_signal": 0.0021489273540781927,
+        "max_direct_signal": 0.0511406525442289,
+        "max_postpulse_commutator": 0.005423870867383483,
+        "equal_time_covariance": -0.002601685559000212
+      }
+    },
+    {
+      "distance": 3.0,
+      "curvature": {
+        "max_spacelike_commutator": 2.541590930143269e-10,
+        "max_spacelike_signal": 5.607365308721339e-11,
+        "max_direct_signal": 0.02137147911061086,
+        "max_postpulse_commutator": 1.1380537604322463e-10,
+        "equal_time_covariance": 2.8568122485283158e-05
+      },
+      "bare_TT": {
+        "max_spacelike_commutator": 0.0144133572609847,
+        "max_spacelike_signal": 0.003179928903260739,
+        "max_direct_signal": 0.04416848162412292,
+        "max_postpulse_commutator": 0.005778149438251174,
+        "equal_time_covariance": -0.0027118402457503464
+      }
+    },
+    {
+      "distance": 4.0,
+      "curvature": {
+        "max_spacelike_commutator": 2.3473173372861466e-10,
+        "max_spacelike_signal": 5.1787506988453604e-11,
+        "max_direct_signal": 0.01612443163633794,
+        "max_postpulse_commutator": 4.320447276847037e-11,
+        "equal_time_covariance": 4.845098092011989e-06
+      },
+      "bare_TT": {
+        "max_spacelike_commutator": 0.016531517922210713,
+        "max_spacelike_signal": 0.003647242957416392,
+        "max_direct_signal": 0.03450589315751583,
+        "max_postpulse_commutator": 0.006716051848935077,
+        "equal_time_covariance": -0.0028764334549357556
+      }
+    }
+  ]
+}

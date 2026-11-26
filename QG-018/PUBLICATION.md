@@ -1,0 +1,3 @@
+# Publication scope
+
+All 13 text files from the local QG-018 package were transferred unchanged and checked against their original Git blob hashes. The full raw `snapshots.npz` array archive (~17 MB) is in the downloadable local package, not in this Git commit. `python run.py` regenerates it. `MANIFEST.sha256` and `verify.py` apply to the original complete local package; verification on this checkout alone cannot pass the omitted binary entry, and rerunning can change timing and serialization bytes. The offline viewer contains downsampled trajectories and runs without that archive. No independent replication has occurred.

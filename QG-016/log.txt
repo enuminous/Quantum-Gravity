@@ -1,0 +1,132 @@
+{
+  "status": "PASS_BOUNDED_LINEAR_SOURCE_REFERENCE",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "seed": 16026,
+  "tolerance": 2e-10,
+  "kappa": 0.1,
+  "elastic_M": [
+    [
+      0.5,
+      0.12,
+      0.18,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.12,
+      0.4,
+      0.04,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.18,
+      0.04,
+      0.36,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.2,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.24,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.16
+    ]
+  ],
+  "acoustic_M": [
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "gauge_tt_difference": 1.3552527156068805e-20,
+  "source_linearity_error": 0.0,
+  "freeze_density_tt_difference": 0.0,
+  "refinement_ratios": [
+    15.066907295530067,
+    15.507831504636954
+  ],
+  "scope": "One-way linearized classical source forcing. Mean-zero density perturbations on prescribed periodic flat background. No self-gravity of matter or quantum evolution."
+}
+off-shell max: {'scalar_identity': 7.993605777301127e-15, 'momentum_identity': 1.855460229904793e-14, 'matter_energy_identity': 2.907916525408748e-17, 'mean_density_rate': 8.326672684688674e-17, 'mean_momentum_rate': 6.579099405186112e-17}
+sampled elastic speed max: 0.6944941785996073
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.2, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 40, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 1.4772254600114998e-18, "momentum_constraint": 1.1519648082658485e-19, "scalar_identity": 2.524158182817815e-19, "momentum_identity": 1.5246593050577406e-19, "matter_energy_relative": 8.846964762110332e-06, "matter_density_displacement": 8.673617379884035e-19, "tt_error": 7.529124847755163e-10, "tt_amplitude": 3.8756536959437695e-06, "metric_amplitude": 7.344619168250071e-05, "density_mean": 3.3010462141276184e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 1.748276003132876e-18, "momentum_constraint": 1.3383120566617945e-19, "scalar_identity": 2.625802136488331e-19, "momentum_identity": 1.5585406229479126e-19, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 9.75781955236954e-19, "tt_error": 4.997126948533655e-11, "tt_amplitude": 3.881849645047575e-06, "metric_amplitude": 7.345839473440434e-05, "density_mean": 2.2128735747018596e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.05, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 160, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 2.8053731213062427e-18, "momentum_constraint": 1.3044307387716225e-19, "scalar_identity": 2.473336205982557e-19, "momentum_identity": 1.6940658945086007e-19, "matter_energy_relative": 8.665229644932992e-09, "matter_density_displacement": 1.3010426069826053e-18, "tt_error": 3.2223247634844874e-12, "tt_amplitude": 3.884759672753477e-06, "metric_amplitude": 7.349171640773329e-05, "density_mean": 4.2159741460602715e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [0, 0, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 0.0001000000000000001, "meta": {"k": [0.0, 0.0, 0.7853981633974483], "q": [0.0, 0.0, 0.7653668647301796], "omega_g": 0.7653668647301796, "omega_m": 0.4592201188381077, "wave_speed": 0.6, "matter_vector": [0.0, 0.0, 1.0], "TT_stress": [9.899494936611663e-05, 0.0], "initial_density_amplitude": 0.001}, "max": {"scalar_constraint": 5.692061405548898e-19, "momentum_constraint": 2.710505431213761e-20, "scalar_identity": 1.1858461261560205e-19, "momentum_identity": 5.082197683525802e-21, "matter_energy_relative": 1.0417618989677635e-08, "matter_density_displacement": 1.1926223897340549e-18, "tt_error": 3.73944562719942e-11, "tt_amplitude": 4.901353810912426e-05, "metric_amplitude": 0.0003224171005077207, "density_mean": 1.0842021724855044e-19, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 12, "d": [0, 0, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 0.00010000000000000018, "meta": {"k": [0.0, 0.0, 0.5235987755982988], "q": [0.0, 0.0, 0.5176380902050415], "omega_g": 0.5176380902050415, "omega_m": 0.3105828541230249, "wave_speed": 0.6, "matter_vector": [0.0, 0.0, 1.0], "TT_stress": [9.899494936611665e-05, 0.0], "initial_density_amplitude": 0.001}, "max": {"scalar_constraint": 1.2874900798265365e-18, "momentum_constraint": 7.453889935837843e-20, "scalar_identity": 2.405573570202213e-19, "momentum_identity": 5.929230630780102e-21, "matter_energy_relative": 9.971723446966507e-10, "matter_density_displacement": 8.673617379884035e-19, "tt_error": 1.2388352909969372e-11, "tt_amplitude": 5.0325670268303916e-05, "metric_amplitude": 0.000612164639569926, "density_mean": 7.228014483236696e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 16, "d": [0, 0, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 0.00010000000000000014, "meta": {"k": [0.0, 0.0, 0.39269908169872414], "q": [0.0, 0.0, 0.3901806440322565], "omega_g": 0.3901806440322565, "omega_m": 0.2341083864193539, "wave_speed": 0.6, "matter_vector": [0.0, 0.0, 1.0], "TT_stress": [9.899494936611663e-05, 0.0], "initial_density_amplitude": 0.001}, "max": {"scalar_constraint": 3.65579420034956e-18, "momentum_constraint": 1.4230153513872246e-19, "scalar_identity": 2.744386749103933e-19, "momentum_identity": 5.505714157152952e-21, "matter_energy_relative": 1.8290768899476006e-10, "matter_density_displacement": 2.1141942363467336e-18, "tt_error": 3.3379396794340488e-12, "tt_amplitude": 8.858437016673863e-05, "metric_amplitude": 0.0006895577012199443, "density_mean": 3.1585505672718164e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "acoustic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 0.0001000000000000001, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.6628271480711836, "wave_speed": 0.5, "matter_vector": [0.5773502691896257, 0.5773502691896257, 0.5773502691896257], "TT_stress": [-1.3552527156068805e-20, 0.0], "initial_density_amplitude": 0.001}, "max": {"scalar_constraint": 2.757939276260002e-18, "momentum_constraint": 2.236166980751353e-19, "scalar_identity": 4.1504614415460717e-19, "momentum_identity": 3.2017845406212553e-19, "matter_energy_relative": 9.417174751114032e-08, "matter_density_displacement": 9.75781955236954e-19, "tt_error": 2.0074952799386356e-20, "tt_amplitude": 2.0328790734103208e-20, "metric_amplitude": 0.000107279817989523, "density_mean": 2.0227433536378378e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": true, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 9.19701880209457e-17, "momentum_constraint": 7.066372362469e-18, "scalar_identity": 8.063753657860939e-19, "momentum_identity": 5.437951521372608e-18, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 9.75781955236954e-19, "tt_error": 4.997126948830117e-11, "tt_amplitude": 3.8818496450475815e-06, "metric_amplitude": 0.000677100423731912, "density_mean": 2.2128735747018596e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "freeze_density", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 0.00019591666180273815, "momentum_constraint": 1.3383120566617945e-19, "scalar_identity": 7.773942119505703e-05, "momentum_identity": 1.5585406229479126e-19, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 0.0019591666180273715, "tt_error": 4.997126948533655e-11, "tt_amplitude": 3.881849645047575e-06, "metric_amplitude": 7.345839473440434e-05, "density_mean": 2.2128735747018596e-20, "matter_continuity": 0.0007773942119505691, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "omit_gravity_stress", "gauge": false, "kappa": 0.1, "amplitude": 0.001, "steps": 80, "source_scale": 9.798401154640538e-05, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 0.00019591666180273823, "momentum_constraint": 3.995869385959181e-05, "scalar_identity": 8.944667923005412e-19, "momentum_identity": 3.17110940070733e-05, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 9.75781955236954e-19, "tt_error": 3.881862078686158e-06, "tt_amplitude": 1.0842021724855044e-19, "metric_amplitude": 0.0007390416961314628, "density_mean": 2.2128735747018596e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.0, "amplitude": 0.001, "steps": 80, "source_scale": 1e-30, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [2.3545141081178535e-05, -3.6047362497672556e-06], "initial_density_amplitude": 0.0009798401154640526}, "max": {"scalar_constraint": 0.0, "momentum_constraint": 0.0, "scalar_identity": 0.0, "momentum_identity": 0.0, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 9.75781955236954e-19, "tt_error": 0.0, "tt_amplitude": 0.0, "metric_amplitude": 0.0, "density_mean": 2.2128735747018596e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+{"L": 8, "d": [1, 1, 1], "model": "elastic", "dt": 0.1, "arm": "conserved", "gauge": false, "kappa": 0.1, "amplitude": 0.002, "steps": 80, "source_scale": 0.00019596802309281076, "meta": {"k": [0.7853981633974483, 0.7853981633974483, 0.7853981633974483], "q": [0.7653668647301796, 0.7653668647301796, 0.7653668647301796], "omega_g": 1.3256542961423672, "omega_m": 0.7934928432354765, "wave_speed": 0.5985669458051982, "matter_vector": [0.7226701802079484, 0.4487667455389621, 0.5256959375309838], "TT_stress": [4.709028216235707e-05, -7.209472499534511e-06], "initial_density_amplitude": 0.0019596802309281053}, "max": {"scalar_constraint": 3.496552006265752e-18, "momentum_constraint": 2.676624113323589e-19, "scalar_identity": 5.251604272976662e-19, "momentum_identity": 3.1170812458958252e-19, "matter_energy_relative": 2.7712363948051433e-07, "matter_density_displacement": 1.951563910473908e-18, "tt_error": 9.99425389706731e-11, "tt_amplitude": 7.76369929009515e-06, "metric_amplitude": 0.00014691678946880869, "density_mean": 4.425747149403719e-20, "matter_continuity": 0.0, "matter_momentum_identity": 0.0}}
+All assertions passed.

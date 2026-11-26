@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "full_cases": 72,
+    "ablation_cases": 144,
+    "primary_sampled_states": 21816,
+    "radau_sampled_states": 7272,
+    "dop853_max_constraint": 1.0522239061056852e-11,
+    "radau_max_constraint": 1.0655774554864076e-12,
+    "max_work": 3.3237031163097276e-12,
+    "max_shear": 9.463679839782912e-13,
+    "max_cross_solver_error": 4.6579321449643895e-12,
+    "max_canonical_error": 1.512578891098665e-11,
+    "no_matter_to_geometry_min": 0.011038779343368157,
+    "no_matter_to_geometry_max": 0.9352490275240833,
+    "no_matter_to_geometry_detected": 72,
+    "no_geometry_to_matter_min": 0.009161204949321254,
+    "no_geometry_to_matter_max": 0.9999999777856846,
+    "no_geometry_to_matter_detected": 72
+  },
+  "checks": {
+    "valid_constraints": true,
+    "work": true,
+    "shear": true,
+    "cross_solver": true,
+    "canonical": true,
+    "all_ablations_detected": true
+  }
+}

@@ -1,0 +1,185 @@
+/mnt/data/QG-020/run.py:106: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  a=diags(np.sqrt(np.arange(1,N)),1,shape=(N,N),format='csr');n=diags(np.arange(N),format='csr');I=eye(N,format='csr');X=a+a.T
+{
+  "status": "PASS_BOUNDED_QUANTIZED_LINEAR_TENSOR_REFERENCE",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "summary": {
+    "source_divergence": 1.1102230246251565e-16,
+    "source_trace": 3.469446951953614e-18,
+    "source_mean": 9.637352644315595e-19,
+    "source_reconstruction": 7.494005416219807e-16,
+    "source_parseval": 4.440892098500626e-16,
+    "mode_residual": 4.440892098500626e-15,
+    "orthogonality": 8.104628079763643e-15,
+    "real_mode_divergence": 3.2673593277424745e-16,
+    "real_mode_curvature": 7.979727989493313e-16,
+    "max_classical_neg": 1.292167811611862e-16,
+    "max_energy_error": 2.7929047963226594e-16,
+    "mean_displacement_error": 3.878959614448864e-18,
+    "norm_error": 0.0,
+    "coherence_magnitude_error": 8.326672684688674e-17,
+    "min_eig": -1.6479873021780091e-16,
+    "max_neg": 0.4953968436582278,
+    "max_separated_neg": 0.47580926060336093,
+    "max_control_neg": 2.883984314373584e-16
+  },
+  "checks": {
+    "lattice_constraints": true,
+    "mode_count": true,
+    "bad_source_detected": true,
+    "unit_trace": true,
+    "positive": true,
+    "energy": true,
+    "zero_mean": true,
+    "classical_separable": true,
+    "matched_coherence_magnitude": true,
+    "null_controls": true,
+    "entanglement": true,
+    "offset_center_entanglement": true,
+    "direct_density": true,
+    "direct_norm": true,
+    "direct_energy": true,
+    "smeared_canonical_bracket": true,
+    "disjoint_control": true
+  },
+  "grids": [
+    {
+      "L": 3,
+      "modes": 52,
+      "expected_modes": 52,
+      "min_omega": 1.7320508075688772,
+      "max_omega": 2.9999999999999996,
+      "source_divergence": 1.1102230246251565e-16,
+      "source_trace": 3.469446951953614e-18,
+      "source_mean": 9.637352644315595e-19,
+      "bad_source_divergence": 1.0,
+      "source_reconstruction": 2.7755575615628914e-16,
+      "source_parseval": 4.440892098500626e-16,
+      "mode_residual": 2.6645352591003757e-15,
+      "rank_ok": true,
+      "orthogonality": 1.7763568394002505e-15,
+      "local_support": 22,
+      "real_mode_divergence": 1.942890293094024e-16,
+      "real_mode_curvature": 7.979727989493313e-16
+    },
+    {
+      "L": 5,
+      "modes": 248,
+      "expected_modes": 248,
+      "min_omega": 1.1755705045849463,
+      "max_omega": 3.2945564141853274,
+      "source_divergence": 5.551115123125783e-17,
+      "source_trace": 3.469446951953614e-18,
+      "source_mean": 1.3877787807814457e-20,
+      "bad_source_divergence": 1.0,
+      "source_reconstruction": 1.3877787807814457e-16,
+      "source_parseval": 2.220446049250313e-16,
+      "mode_residual": 3.552713678800501e-15,
+      "rank_ok": true,
+      "orthogonality": 8.104628079763643e-15,
+      "local_support": 34,
+      "real_mode_divergence": 8.326672684688674e-17,
+      "real_mode_curvature": 4.996003610813204e-16
+    },
+    {
+      "L": 7,
+      "modes": 684,
+      "expected_modes": 684,
+      "min_omega": 0.8677674782351162,
+      "max_omega": 3.3772493552319345,
+      "source_divergence": 5.551115123125783e-17,
+      "source_trace": 3.469446951953614e-18,
+      "source_mean": 2.0230011381653726e-19,
+      "bad_source_divergence": 1.0,
+      "source_reconstruction": 2.7755575615628914e-16,
+      "source_parseval": 3.3306690738754696e-16,
+      "mode_residual": 4.440892098500626e-15,
+      "rank_ok": true,
+      "orthogonality": 5.218048215738236e-15,
+      "local_support": 34,
+      "real_mode_divergence": 2.498001805406602e-16,
+      "real_mode_curvature": 4.657688725731897e-16
+    },
+    {
+      "L": 9,
+      "modes": 1456,
+      "expected_modes": 1456,
+      "min_omega": 0.6840402866513374,
+      "max_omega": 3.4114741278097727,
+      "source_divergence": 5.551115123125783e-17,
+      "source_trace": 3.469446951953614e-18,
+      "source_mean": 9.518372982040093e-21,
+      "bad_source_divergence": 1.0,
+      "source_reconstruction": 7.494005416219807e-16,
+      "source_parseval": 2.220446049250313e-16,
+      "mode_residual": 4.440892098500626e-15,
+      "rank_ok": true,
+      "orthogonality": 7.771561172376096e-15,
+      "local_support": 34,
+      "real_mode_divergence": 3.2673593277424745e-16,
+      "real_mode_curvature": 6.346485525532496e-16
+    }
+  ],
+  "direct": {
+    "mode_indices": [
+      222,
+      202
+    ],
+    "frequencies": [
+      3.2945564141853274,
+      3.2945564141853274
+    ],
+    "couplings": [
+      [
+        0.008136266616605247,
+        -0.008136266616605247
+      ],
+      [
+        0.07706782355860932,
+        -0.07706782355860932
+      ],
+      [
+        -0.07706782355860932,
+        0.07706782355860932
+      ],
+      [
+        -0.008136266616605247,
+        0.008136266616605247
+      ]
+    ],
+    "samples": 41,
+    "runs": [
+      {
+        "N": 6,
+        "dimension": 144,
+        "max_density_error": 1.9872992140790302e-13,
+        "norm_error": 6.119549311733863e-13,
+        "energy_error": 3.6225362987085674e-15,
+        "max_neg": 0.016992060522133628
+      },
+      {
+        "N": 10,
+        "dimension": 400,
+        "max_density_error": 1.354472090042691e-13,
+        "norm_error": 2.7844393457598926e-13,
+        "energy_error": 7.741576206043294e-16,
+        "max_neg": 0.016992060521967566
+      },
+      {
+        "N": 16,
+        "dimension": 1024,
+        "max_density_error": 1.3489209749195652e-13,
+        "norm_error": 2.9454216843305403e-13,
+        "energy_error": 5.068916206912855e-16,
+        "max_neg": 0.01699206052214541
+      }
+    ]
+  }
+}
+cases 99 controls 8 samples 15939
+peak separated {'L': 3, 'dx': 1, 'g': 1.0, 'temperature': 0.0, 'support_overlap': 19, 'static_cross_rate': -0.02835051546391754, 'smeared_canonical_bracket_error': 1.1102230246251565e-16, 'max_neg': 0.47580926060336093, 'peak_t': 23.0, 'final_neg': 0.32923964272678186, 'max_classical_neg': 1.060682204415944e-16, 'max_energy_error': 1.7340119683011135e-16, 'mean_displacement_error': 3.878959614448864e-18, 'norm_error': 0.0, 'min_eig': -1.4150003977845598e-16, 'coherence_magnitude_error': 5.551115123125783e-17}
+large-grid disjoint controls [{"L": 11, "dx": 4, "g": 0.5, "support_overlap": 1, "static_cross_rate": -4.336808689942018e-19, "smeared_canonical_bracket_error": 1.6642503347652493e-17, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}, {"L": 11, "dx": 4, "g": 1.0, "support_overlap": 1, "static_cross_rate": -4.336808689942018e-19, "smeared_canonical_bracket_error": 1.6642503347652493e-17, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}, {"L": 11, "dx": 4, "g": 2.0, "support_overlap": 1, "static_cross_rate": -4.336808689942018e-19, "smeared_canonical_bracket_error": 1.6642503347652493e-17, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}, {"L": 11, "dx": 5, "g": 0.5, "support_overlap": 0, "static_cross_rate": 8.673617379884035e-19, "smeared_canonical_bracket_error": 6.432058821129329e-18, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}, {"L": 11, "dx": 5, "g": 1.0, "support_overlap": 0, "static_cross_rate": 8.673617379884035e-19, "smeared_canonical_bracket_error": 6.432058821129329e-18, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}, {"L": 11, "dx": 5, "g": 2.0, "support_overlap": 0, "static_cross_rate": 8.673617379884035e-19, "smeared_canonical_bracket_error": 6.432058821129329e-18, "max_neg": 1.4150003977845598e-16, "peak_t": 0.0, "samples": 401}]

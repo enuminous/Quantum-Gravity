@@ -1,0 +1,20 @@
+/mnt/data/QG-022/run.py:37: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  a=diags(np.sqrt(np.arange(1,cut)),1,shape=(cut,cut),format='csr');num=diags(np.arange(cut));bops=[kron(a,eye(cut)),kron(eye(cut),a)]
+(11, 6, 3.0, 0.0, 0.0, 'full', 'excited') neg 2.643582705585556e-12 field E 0.0 matter min -3.9968028886505635e-15 tail 0.0
+(11, 6, 3.0, 2.0, 0.0, 'full', 'excited') neg 0.15180136854517703 field E 0.0 matter min -2.6645352591003757e-15 tail 0.0
+(11, 6, 3.0, 0.0, 0.8, 'full', 'excited') neg 0.020227184726764418 field E 1.5059133378977545 matter min -1.381658668449665 tail 1.0144011658602424e-07
+(11, 6, 3.0, 2.0, 0.4, 'full', 'excited') neg 0.13173562567453617 field E 0.7755883196098092 matter min -0.7183973347110559 tail 8.280111372796616e-10
+(11, 6, 3.0, 2.0, 0.8, 'full', 'excited') neg 0.10846243206289442 field E 1.4857105233443422 matter min -1.3559586861382131 tail 1.194234307903444e-07
+(11, 6, 3.0, 2.0, 1.2, 'full', 'excited') neg 0.25783924434538663 field E 1.6550681110127077 matter min -1.4873681363162234 tail 2.9812765421481215e-06
+(11, 6, 3.0, 8.0, 0.8, 'full', 'excited') neg 0.38655783512776953 field E 1.1585505889192909 matter min -1.134927180318818 tail 2.8734027899201193e-06
+(11, 6, 4.0, 2.0, 0.8, 'full', 'excited') neg 0.05209831471874382 field E 1.492543307581443 matter min -1.366455178015252 tail 1.066541727339943e-07
+(11, 6, 6.0, 2.0, 0.8, 'full', 'excited') neg 0.029196621829806927 field E 1.5008540672597948 matter min -1.3762135088267349 tail 1.0253635769985871e-07
+(11, 6, 3.0, 2.0, 0.8, 'double_scalar', 'excited') neg 0.20459172818871 field E 1.5946436856677901 matter min -1.4706500170380032 tail 2.3022807123492036e-07
+(11, 6, 3.0, 2.0, 0.8, 'double_TT', 'excited') neg 0.1292925771596461 field E 1.3599781095803902 matter min -1.2326831605848856 tail 1.3634230241560728e-07
+(11, 6, 3.0, 2.0, 0.8, 'force_only', 'excited') neg 0.01783170197493508 field E 1.5458325147662526 matter min -1.4169240986542055 tail 1.1363270163489897e-07
+(11, 4, 3.0, 2.0, 0.8, 'full', 'excited') neg 0.10845153072245475 field E 1.4857735558014906 matter min -1.3557190629447773 tail 0.0002733561002164699
+(11, 8, 3.0, 2.0, 0.8, 'full', 'excited') neg 0.1084624497241819 field E 1.4857103974927495 matter min -1.3559588870931545 tail 7.074060191028317e-11
+(7, 6, 3.0, 2.0, 0.8, 'full', 'excited') neg 0.23964995959606367 field E 0.9620157549245641 matter min -0.791270065903211 tail 5.002401549910568e-07
+(15, 6, 3.0, 2.0, 0.8, 'full', 'excited') neg 0.10118865441167725 field E 1.6863610149710597 matter min -1.5757405823682598 tail 1.6197458453002665e-07
+(11, 6, 3.0, 2.0, 0.8, 'full', 'superposition') neg 0.14348478469681564 field E 0.030457016019561023 matter min -0.00018017533359740434 tail 1.2922664631825433e-08
+CHECKS {'scalar_once': True, 'TT_static_shift': True, 'TT_source': True, 'disjoint_source_envelopes': True, 'TT_modes': True, 'unitarity': True, 'energy': True, 'continuity': True, 'power': True, 'null': True, 'scalar_only': True, 'TT_only': True, 'combined': True, 'cutoff_refinement': True, 'dense': True} static {'scalar': [[1.1, -1.8181818181818157, -1.8181818181818181, -3.6363636363636314], [2.0, -0.9999999999999987, -1.0, -1.9999999999999973], [3.0, -0.6666666666666659, -0.6666666666666666, -1.3333333333333317], [4.0, -0.49999999999999933, -0.5, -0.9999999999999987], [6.0, -0.3333333333333329, -0.3333333333333333, -0.6666666666666659]], 'scalar_error': 2.4424906541753444e-15, 'TT': [[[0.1, 0.2], -0.025183616921642078, -0.025183616921642074, -0.05036723384328415], [[0.5, -0.3], -0.17124859506716605, -0.17124859506716605, -0.3424971901343321], [[1.0, 0.7], -0.7504717842649336, -0.7504717842649337, -1.500943568529867]], 'TT_error': 1.1102230246251565e-16} dense 9.85995093683201e-15 cutoff {'diff4_6': 0.0006855300183036261, 'diff6_8': 5.152758809079394e-07}

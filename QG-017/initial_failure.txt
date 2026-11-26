@@ -1,0 +1,3 @@
+Initial matched-window attempt with expansion duration 2.5/|H0| terminated at solve() for an ablated trajectory:
+AssertionError: Required step size is less than spacing between numbers.
+Retained the original attempted source as initial_attempt.py. Final source shortens common window and evaluates the longer window independently with a domain stop. No claim of a physical singularity from the failed run.

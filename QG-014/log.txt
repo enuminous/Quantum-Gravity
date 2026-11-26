@@ -1,0 +1,209 @@
+QG-014 assertions PASS
+linear: {
+  "mixed_cotton_quartic": [
+    {
+      "k": 0.001,
+      "omega": 3.1622934715171523e-07,
+      "local_log_slope": 2.000009999900001
+    },
+    {
+      "k": 0.01,
+      "omega": 3.163858403911275e-05,
+      "local_log_slope": 2.000999000999001
+    },
+    {
+      "k": 0.1,
+      "omega": 0.0033166247903554003,
+      "local_log_slope": 2.090909090909091
+    },
+    {
+      "k": 0.5,
+      "omega": 0.1479019945774904,
+      "local_log_slope": 2.7142857142857144
+    },
+    {
+      "k": 1.0,
+      "omega": 1.0488088481701516,
+      "local_log_slope": 2.909090909090909
+    }
+  ],
+  "max_residuals": {
+    "vector_gauge": 3.734646273046079e-18,
+    "cotton_gauge": 1.3877787807814457e-17,
+    "quartic_gauge": 1.3877787807814457e-17,
+    "cotton_divergence": 4.3686991683333424e-18,
+    "cotton_trace": 1.3877787807814457e-17,
+    "quartic_identity": 2.0816681711721685e-17,
+    "cotton_identity": 8.673617379884035e-18,
+    "constraint_flow": 8.903694892318728e-18,
+    "helicity_rotation": 1.3010426069826053e-16
+  },
+  "dispersion_exponents": {
+    "vector_double_curl": 2.0000000000000018,
+    "traceless_cotton": 3.0000000000000013,
+    "traceless_quartic": 2.0000000000000018,
+    "nonlocal_relativistic_control": 1.0000000000000009
+  },
+  "quadratic_local_ansatz_singular_values": [
+    62.177994907392105,
+    20.11971572835159,
+    11.772782480188738,
+    0.7039751279788796
+  ],
+  "quadratic_ansatz_rank": 4,
+  "mass_term_gauge_violation_range": [
+    0.3,
+    0.30000000000000004
+  ],
+  "realspace": [
+    {
+      "L": 5,
+      "zero_momentum_symbols": 1,
+      "vector_double_curl_error": 8.881784197001252e-16,
+      "cotton_error": 1.3322676295501878e-15,
+      "quartic_energy_error": 0.0,
+      "double_curl_weyl_break": 4.025099369199553
+    },
+    {
+      "L": 7,
+      "zero_momentum_symbols": 1,
+      "vector_double_curl_error": 6.661338147750939e-16,
+      "cotton_error": 1.1102230246251565e-15,
+      "quartic_energy_error": 5.170011877780009e-16,
+      "double_curl_weyl_break": 3.42365033166681
+    },
+    {
+      "L": 9,
+      "zero_momentum_symbols": 1,
+      "vector_double_curl_error": 8.881784197001252e-16,
+      "cotton_error": 1.3322676295501878e-15,
+      "quartic_energy_error": 1.1532120856600361e-16,
+      "double_curl_weyl_break": 4.188356696620877
+    },
+    {
+      "L": 8,
+      "zero_momentum_symbols": 8,
+      "vector_double_curl_error": 8.881784197001252e-16,
+      "cotton_error": 1.3322676295501878e-15,
+      "quartic_energy_error": 0.0,
+      "double_curl_weyl_break": 4.370227562229298
+    }
+  ]
+}
+quantum: {
+  "modulus": 3,
+  "sites": 3,
+  "gauss_rank": 9,
+  "physical_dimension": 19683,
+  "states_enumerated": 19683,
+  "zero_flux_dimension": 729,
+  "extended_dimension": 2187,
+  "invariant_moves": 6,
+  "invariant_projector_commutator": 0.0,
+  "invariant_max_leakage": 0.0,
+  "breaking_projector_commutator": 0.27,
+  "bare_eigenvalues": [
+    -1.1959673424109751,
+    -0.5235835234504086,
+    -0.5235835234504085,
+    -0.5235835234504084,
+    -0.33103959976423103,
+    -0.33103959976423036
+  ],
+  "invariant_interaction_eigenvalues": [
+    -1.6095546972241408,
+    -0.9371708782635713,
+    -0.9371708782635713,
+    -0.9371708782635696,
+    -0.7283627877438594,
+    -0.7283627877438578
+  ]
+}
+gap: [
+  {
+    "gap": 0.0,
+    "energies": [
+      -1.8486483855065927,
+      -1.8486483855065907,
+      -1.1762645665460258,
+      -1.176264566546023,
+      -1.1762645665460225,
+      -1.1762645665460203
+    ],
+    "max_leakage": 0.8581948113095789,
+    "norm_error": 6.761258219967203e-14,
+    "energy_error": 1.2145839889399213e-13
+  },
+  {
+    "gap": 4.0,
+    "energies": [
+      -1.6365581601775632,
+      -0.9641743412169915,
+      -0.9641743412169878,
+      -0.959528609756952,
+      -0.7553662506972769,
+      -0.7553662506972734
+    ],
+    "max_leakage": 0.024664357328594427,
+    "norm_error": 3.113065361048939e-13,
+    "energy_error": 5.24469356832924e-13,
+    "effective_energies": [
+      -1.6385812306208176,
+      -0.9661974116602473,
+      -0.9661974116602463,
+      -0.9607943448668946,
+      -0.7573893211405324,
+      -0.7573893211405294
+    ],
+    "bare_spectral_error": 0.027003462953422375,
+    "corrected_spectral_error": 0.0020230704432585567
+  },
+  {
+    "gap": 16.0,
+    "energies": [
+      -1.6166604336113388,
+      -0.9442766146507686,
+      -0.9442766146507632,
+      -0.9430262222371087,
+      -0.7354685241310587,
+      -0.7354685241310512
+    ],
+    "max_leakage": 0.0017360697149228282,
+    "norm_error": 1.8283152769527078e-12,
+    "energy_error": 2.9629632081196178e-12,
+    "effective_energies": [
+      -1.6167848305919923,
+      -0.9444010116314243,
+      -0.9444010116314231,
+      -0.9431032448957172,
+      -0.7355929211117086,
+      -0.7355929211117077
+    ],
+    "bare_spectral_error": 0.007105736387199246,
+    "corrected_spectral_error": 0.00012439698065991323
+  },
+  {
+    "gap": 64.0,
+    "energies": [
+      -1.611352837179877,
+      -0.9389690182193131,
+      -0.9389690182192845,
+      -0.9386508700696153,
+      -0.7301609276995953,
+      -0.7301609276995858
+    ],
+    "max_leakage": 0.00011087583592442386,
+    "norm_error": 9.60587165366178e-12,
+    "energy_error": 1.5477175097089457e-11,
+    "effective_energies": [
+      -1.611360562070226,
+      -0.9389767431096581,
+      -0.9389767431096555,
+      -0.9386556384174852,
+      -0.7301686525899441,
+      -0.7301686525899406
+    ],
+    "bare_spectral_error": 0.001798139955741851,
+    "corrected_spectral_error": 7.724890371041404e-06
+  }
+]

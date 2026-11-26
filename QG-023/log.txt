@@ -1,0 +1,178 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "checks": {
+    "on_shell": true,
+    "vertex_ward": true,
+    "pure_gauge_decoupling": true,
+    "boost_invariance": true,
+    "longitudinal_propagator_control": true,
+    "missing_vertex_trace_detected": true,
+    "offshell_identity": true,
+    "static_channel_decomposition": true,
+    "newton_limit": true,
+    "double_count_and_trace_controls": true,
+    "source_conservation": true,
+    "retarded_support": true,
+    "nonretarded_control": true,
+    "exterior_ward_convergence": true,
+    "exterior_wave_convergence": true,
+    "curvature_gauge_convergence": true,
+    "missing_momentum_control": true,
+    "weak_metric": true
+  },
+  "scattering_max": {
+    "shell": 6.217248937900877e-15,
+    "conservation": 1.138719117059476e-15,
+    "gauge": 1.137769289817633e-15,
+    "boost_amplitude": 2.4903641333280288e-15,
+    "gauge_shift": 8.41592375226819e-30,
+    "bad_gauge_shift": 0.48412053212259726,
+    "bad_vertex_conservation": 0.4198844506626056,
+    "offshell_identity": 2.9412242765874983e-15,
+    "offshell_conservation": 1.090363389451115,
+    "decomposition": 5.163222093755631e-16
+  },
+  "static_summary": [
+    {
+      "p": 0.001,
+      "relative_error": 6.842122830752473e-06,
+      "no_trace_min": 1.9999986843646032,
+      "tt_only_max": 9.226179130519247e-13,
+      "double_newton_min": 2.000003047005812
+    },
+    {
+      "p": 0.003,
+      "relative_error": 6.157916610227687e-05,
+      "no_trace_min": 1.9999881596426763,
+      "tt_only_max": 7.473145310617899e-11,
+      "double_newton_min": 2.000027422905189
+    },
+    {
+      "p": 0.01,
+      "relative_error": 0.0006842206191772782,
+      "no_trace_min": 1.9998684861255152,
+      "tt_only_max": 9.225265830115375e-09,
+      "double_newton_min": 2.000304680354059
+    },
+    {
+      "p": 0.03,
+      "relative_error": 0.006158591294660232,
+      "no_trace_min": 1.9988199823481128,
+      "tt_only_max": 7.466492725472763e-07,
+      "double_newton_min": 2.0027406535697305
+    },
+    {
+      "p": 0.1,
+      "relative_error": 0.06850459829471145,
+      "no_trace_min": 1.9873380379411976,
+      "tt_only_max": 9.134839957127119e-05,
+      "double_newton_min": 2.0302679555979415
+    },
+    {
+      "p": 0.3,
+      "relative_error": 0.6220489496570756,
+      "no_trace_min": 1.917529925825535,
+      "tt_only_max": 0.006856158320115311,
+      "double_newton_min": 2.2591496509141757
+    },
+    {
+      "p": 0.6,
+      "relative_error": 2.543413187480273,
+      "no_trace_min": 1.9194631764239596,
+      "tt_only_max": 0.08792014786971401,
+      "double_newton_min": 2.90477852530967
+    }
+  ],
+  "detectors": [
+    {
+      "r": 2.0,
+      "pre_metric": 0.0,
+      "pre_tidal": 0.0,
+      "post_tidal": 0.0,
+      "peak_tidal": 131.54702188198542,
+      "peak_plus": 87.79561929875368,
+      "peak_cross": 30.728467500968605,
+      "instant_pre": 132.67090238030826,
+      "advanced_pre": 109.3281939692118,
+      "max_metric": 3.595997775305208e-05
+    },
+    {
+      "r": 4.0,
+      "pre_metric": 0.0,
+      "pre_tidal": 0.0,
+      "post_tidal": 0.0,
+      "peak_tidal": 67.00483703999001,
+      "peak_plus": 44.71960744056361,
+      "peak_cross": 15.651862628444466,
+      "instant_pre": 67.1453224853306,
+      "advanced_pre": 0.0,
+      "max_metric": 1.797998887652604e-05
+    },
+    {
+      "r": 8.0,
+      "pre_metric": 0.0,
+      "pre_tidal": 0.0,
+      "post_tidal": 0.0,
+      "peak_tidal": 33.65942109754802,
+      "peak_plus": 22.464588601265394,
+      "peak_cross": 7.862606011172597,
+      "instant_pre": 33.676981761132865,
+      "advanced_pre": 0.0,
+      "max_metric": 8.98999443826302e-06
+    }
+  ],
+  "refinement": [
+    {
+      "h": 0.04,
+      "ward": 0.11317008192978961,
+      "wave": 0.7924033642920888,
+      "bad_ward": 20.410517889350903,
+      "gauge_curvature": 0.00019162658667289513
+    },
+    {
+      "h": 0.02,
+      "ward": 0.028447740178907242,
+      "wave": 0.19867780367572854,
+      "bad_ward": 20.553895594940897,
+      "gauge_curvature": 4.791353545876683e-05
+    },
+    {
+      "h": 0.01,
+      "ward": 0.007121656711026369,
+      "wave": 0.04970554419115981,
+      "bad_ward": 20.58985715452293,
+      "gauge_curvature": 1.1978813230963816e-05
+    },
+    {
+      "h": 0.005,
+      "ward": 0.0017810221008563085,
+      "wave": 0.012428641844926957,
+      "bad_ward": 20.59885487723747,
+      "gauge_curvature": 2.9947265488229777e-06
+    }
+  ],
+  "ratios": {
+    "ward": [
+      3.978174758981393,
+      3.994539660253768,
+      3.998634664669408
+    ],
+    "wave": [
+      3.9883839544824435,
+      3.997095432888624,
+      3.999274000437006
+    ],
+    "gauge_curvature": [
+      3.9994248981648224,
+      3.9998566247711422,
+      3.9999689573232886
+    ]
+  },
+  "source_max": {
+    "ward": 3.0790203646065915e-15,
+    "bad": 24.851879667590328
+  }
+}

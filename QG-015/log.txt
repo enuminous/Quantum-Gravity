@@ -1,0 +1,317 @@
+{
+  "status": "PASS_BOUNDED_REFERENCE",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mode_max": {
+    "bracket": 5.4509130758331936e-15,
+    "closure": 4.953780304294372e-15,
+    "reduced": 5.397567705555396e-15,
+    "gauge": 2.4868995751603507e-14,
+    "trajectory_constraints": 4.405364961712621e-13,
+    "energy": 6.920686246303376e-12
+  },
+  "real_max": {
+    "curvature_gauge": 2.1316282072803006e-14,
+    "momentum_closure": 1.7763568394002505e-14,
+    "scalar_closure": 8.881784197001252e-15,
+    "adjoint": 3.369614140010616e-17,
+    "hessian": 1.553434251851019e-16,
+    "symbol": 1.755834969448497e-15
+  },
+  "negative_control_min": {
+    "identity_kinetic": 0.344040155131316,
+    "scalar_stiffness": 0.1199889368937277,
+    "remove_cross": 0.23997787378745544
+  },
+  "dispersion": [
+    {
+      "L": 8,
+      "staggered_zeros": 1,
+      "centered_zeros": 8,
+      "first_shell": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "k": 0.7853981633974483,
+          "omega": 0.7653668647301796,
+          "relative_error": 0.025504641595567312
+        },
+        {
+          "direction": [
+            1,
+            1,
+            0
+          ],
+          "k": 1.1107207345395915,
+          "omega": 1.082392200292394,
+          "relative_error": 0.025504641595567312
+        },
+        {
+          "direction": [
+            1,
+            1,
+            1
+          ],
+          "k": 1.3603495231756633,
+          "omega": 1.3256542961423672,
+          "relative_error": 0.0255046415955672
+        },
+        {
+          "direction": [
+            2,
+            1,
+            0
+          ],
+          "k": 1.7562036827601815,
+          "omega": 1.6080380709507174,
+          "relative_error": 0.08436698616677307
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "staggered_zeros": 1,
+      "centered_zeros": 8,
+      "first_shell": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "k": 0.39269908169872414,
+          "omega": 0.3901806440322565,
+          "relative_error": 0.006413148855794248
+        },
+        {
+          "direction": [
+            1,
+            1,
+            0
+          ],
+          "k": 0.5553603672697958,
+          "omega": 0.551798758565886,
+          "relative_error": 0.006413148855794248
+        },
+        {
+          "direction": [
+            1,
+            1,
+            1
+          ],
+          "k": 0.6801747615878316,
+          "omega": 0.6758126995938145,
+          "relative_error": 0.006413148855794248
+        },
+        {
+          "direction": [
+            2,
+            1,
+            0
+          ],
+          "k": 0.8781018413800907,
+          "omega": 0.8590851951956403,
+          "relative_error": 0.021656538328814423
+        }
+      ]
+    },
+    {
+      "L": 32,
+      "staggered_zeros": 1,
+      "centered_zeros": 8,
+      "first_shell": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "k": 0.19634954084936207,
+          "omega": 0.1960342806591212,
+          "relative_error": 0.0016056069643816118
+        },
+        {
+          "direction": [
+            1,
+            1,
+            0
+          ],
+          "k": 0.2776801836348979,
+          "omega": 0.27723433839818296,
+          "relative_error": 0.0016056069643815007
+        },
+        {
+          "direction": [
+            1,
+            1,
+            1
+          ],
+          "k": 0.3400873807939158,
+          "omega": 0.3395413341268148,
+          "relative_error": 0.0016056069643816118
+        },
+        {
+          "direction": [
+            2,
+            1,
+            0
+          ],
+          "k": 0.43905092069004537,
+          "omega": 0.4366581891719948,
+          "relative_error": 0.00544978134720675
+        }
+      ]
+    },
+    {
+      "L": 64,
+      "staggered_zeros": 1,
+      "centered_zeros": 8,
+      "first_shell": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "k": 0.09817477042468103,
+          "omega": 0.09813534865483603,
+          "relative_error": 0.00040154685032089965
+        },
+        {
+          "direction": [
+            1,
+            1,
+            0
+          ],
+          "k": 0.13884009181744894,
+          "omega": 0.13878434101588139,
+          "relative_error": 0.00040154685032089965
+        },
+        {
+          "direction": [
+            1,
+            1,
+            1
+          ],
+          "k": 0.1700436903969579,
+          "omega": 0.16997540988866208,
+          "relative_error": 0.00040154685032078863
+        },
+        {
+          "direction": [
+            2,
+            1,
+            0
+          ],
+          "k": 0.21952546034502268,
+          "omega": 0.21922587860274464,
+          "relative_error": 0.0013646788022090295
+        }
+      ]
+    },
+    {
+      "L": 128,
+      "staggered_zeros": 1,
+      "centered_zeros": 8,
+      "first_shell": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "k": 0.04908738521234052,
+          "omega": 0.049082457045824576,
+          "relative_error": 0.00010039578385823145
+        },
+        {
+          "direction": [
+            1,
+            1,
+            0
+          ],
+          "k": 0.06942004590872447,
+          "omega": 0.0694130764288,
+          "relative_error": 0.00010039578385812042
+        },
+        {
+          "direction": [
+            1,
+            1,
+            1
+          ],
+          "k": 0.08502184519847895,
+          "omega": 0.08501330936368519,
+          "relative_error": 0.00010039578385812042
+        },
+        {
+          "direction": [
+            2,
+            1,
+            0
+          ],
+          "k": 0.10976273017251134,
+          "omega": 0.10972526712321753,
+          "relative_error": 0.00034130937919385484
+        }
+      ]
+    }
+  ],
+  "static_sources": [
+    {
+      "L": 8,
+      "relative_residual": 2.2904254900236497e-15,
+      "nonzero_mean_source_unavoidable_mean_residual": 50.26548245743669,
+      "mean_curvature": 0.0,
+      "max_abs_phi": 0.001
+    },
+    {
+      "L": 16,
+      "relative_residual": 9.955432073367286e-15,
+      "nonzero_mean_source_unavoidable_mean_residual": 50.26548245743669,
+      "mean_curvature": 0.0,
+      "max_abs_phi": 0.001
+    },
+    {
+      "L": 32,
+      "relative_residual": 5.140019928599737e-14,
+      "nonzero_mean_source_unavoidable_mean_residual": 50.26548245743669,
+      "mean_curvature": 3.3881317890172014e-21,
+      "max_abs_phi": 0.001
+    }
+  ],
+  "real_space_propagation": [
+    {
+      "L": 8,
+      "dt": 0.1,
+      "steps": 80,
+      "max_constraint": 1.3877787807814457e-15,
+      "max_gauge_amplitude_difference": 2.32724411404473e-16,
+      "max_wave_error": 0.007207060814645894,
+      "max_relative_energy_error": 0.004391432201328502
+    },
+    {
+      "L": 8,
+      "dt": 0.05,
+      "steps": 160,
+      "max_constraint": 1.1796119636642288e-15,
+      "max_gauge_amplitude_difference": 2.40561338585587e-16,
+      "max_wave_error": 0.0017969496126747364,
+      "max_relative_energy_error": 0.0010983168954363377
+    },
+    {
+      "L": 8,
+      "dt": 0.025,
+      "steps": 320,
+      "max_constraint": 1.3877787807814457e-15,
+      "max_gauge_amplitude_difference": 4.575363707941798e-16,
+      "max_wave_error": 0.0004489365390036304,
+      "max_relative_energy_error": 0.00027458718020351315
+    }
+  ]
+}
+All assertions passed.

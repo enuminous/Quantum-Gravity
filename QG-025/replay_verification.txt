@@ -1,0 +1,1 @@
+Same-environment replay: results.json and summary.json byte identical.

@@ -1,0 +1,97 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "events": 128,
+  "helicity_cases": 512,
+  "max_errors": {
+    "diagram_factorization": 2.421112366670723e-13,
+    "field_strength": 1.3138140579367177e-14,
+    "lorentz": 2.43887348993921e-13,
+    "gauge_shift": 7.594940545044341e-13,
+    "ward_in": 1.0528118650674276e-12,
+    "ward_out": 1.4732024295982845e-12,
+    "reverse": 1.4124357246619969e-15,
+    "rest_helicity": 2.9917041066696015e-14,
+    "shell": 2.042810365310288e-14,
+    "polarization": 5.581300881723771e-16
+  },
+  "ablations": {
+    "s": {
+      "max": 154.36555753398818,
+      "median": 0.49724301763825807,
+      "detected": 500
+    },
+    "u": {
+      "max": 112.1928619045699,
+      "median": 0.1734991832770006,
+      "detected": 492
+    },
+    "contact": {
+      "max": 64.90176558683156,
+      "median": 0.6731513354672368,
+      "detected": 511
+    },
+    "t": {
+      "max": 26.115934628376493,
+      "median": 0.44334662381474277,
+      "detected": 511
+    }
+  },
+  "cross_section_max_relative_error": 7.09432512735475e-14,
+  "low_energy_max_relative_error": 0.000399119427630934,
+  "forward": [
+    {
+      "theta": 0.2,
+      "scaled": 0.9671497538985333,
+      "error": 0.032850246101466696
+    },
+    {
+      "theta": 0.1,
+      "scaled": 0.9916963047282141,
+      "error": 0.008303695271785871
+    },
+    {
+      "theta": 0.05,
+      "scaled": 0.9979183346166793,
+      "error": 0.0020816653833206633
+    },
+    {
+      "theta": 0.02,
+      "scaled": 0.9996666757887642,
+      "error": 0.0003333242112357748
+    },
+    {
+      "theta": 0.01,
+      "scaled": 0.9999166597366064,
+      "error": 8.334026339362754e-05
+    },
+    {
+      "theta": 0.005,
+      "scaled": 0.9999791643463269,
+      "error": 2.0835653673056953e-05
+    }
+  ],
+  "checks": {
+    "diagram_factorization": true,
+    "field_strength": true,
+    "lorentz": true,
+    "gauge_shift": true,
+    "ward_in": true,
+    "ward_out": true,
+    "reverse": true,
+    "rest_helicity": true,
+    "shell": true,
+    "polarization": true,
+    "detect_missing_s": true,
+    "detect_missing_u": true,
+    "detect_missing_contact": true,
+    "detect_missing_t": true,
+    "cross_section": true,
+    "low_energy": true,
+    "forward": true
+  }
+}
+elapsed seconds 1.5508084350000217
